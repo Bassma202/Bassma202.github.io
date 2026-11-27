@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }, 10);
         } else {
           card.style.opacity = '0';
-          card.style.transform = 'translateY(10px)';
+          card.style.transform = 'translateY(8px)';
           setTimeout(() => {
             card.style.display = 'none';
           }, 200);
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
       navigator.clipboard.writeText(email).then(() => {
         const originalText = copyBtn.innerText;
         copyBtn.innerText = 'Copied!';
-        copyBtn.style.background = '#10b981';
+        copyBtn.style.background = '#059669';
         copyBtn.style.color = '#ffffff';
 
         setTimeout(() => {
@@ -73,12 +73,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Navbar background change on scroll
   const navbar = document.querySelector('.navbar');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      navbar.style.background = 'rgba(7, 10, 18, 0.95)';
-      navbar.style.boxShadow = '0 10px 30px rgba(0,0,0,0.4)';
+    if (window.scrollY > 30) {
+      navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+      navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.06)';
+      navbar.style.borderBottomColor = '#cbd5e1';
     } else {
-      navbar.style.background = 'rgba(7, 10, 18, 0.82)';
+      navbar.style.background = 'rgba(248, 250, 252, 0.88)';
       navbar.style.boxShadow = 'none';
+      navbar.style.borderBottomColor = '#e2e8f0';
     }
   });
 });
