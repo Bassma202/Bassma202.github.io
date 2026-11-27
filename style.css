@@ -286,6 +286,8 @@ button {
 }
 
 [data-theme="archival"] .btn-primary {
+  background: #0F172A;
+  border-color: #0F172A;
   color: #FFFFFF;
 }
 
@@ -294,6 +296,11 @@ button {
   border-color: var(--accent-brass-hover);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
+}
+
+[data-theme="archival"] .btn-primary:hover {
+  background: #1E293B;
+  border-color: #1E293B;
 }
 
 .btn-outline {
@@ -307,6 +314,18 @@ button {
   color: var(--accent-brass);
   background: var(--accent-brass-glow);
   transform: translateY(-1px);
+}
+
+[data-theme="archival"] .btn-outline {
+  background: var(--bg-surface);
+  border-color: var(--border-primary);
+  color: var(--text-primary);
+}
+
+[data-theme="archival"] .btn-outline:hover {
+  background: var(--bg-subtle);
+  border-color: var(--text-primary);
+  color: var(--text-primary);
 }
 
 .btn-ghost {
@@ -479,6 +498,7 @@ button {
 }
 
 [data-theme="archival"] .ctrl-btn.active {
+  background: #0F172A;
   color: #FFFFFF;
 }
 
@@ -531,37 +551,34 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  padding: 0.35rem 0.85rem;
+  padding: 0.35rem 0.75rem;
   font-family: var(--font-sans);
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: #0D1017;
-  background: var(--accent-brass);
-  border: 1px solid var(--accent-brass);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-primary);
   border-radius: var(--radius-sm);
   text-decoration: none;
-  transition: all var(--trans-base);
+  transition: all var(--trans-fast);
   letter-spacing: 0.01em;
   white-space: nowrap;
 }
 
-[data-theme="archival"] .nav-cv-btn {
-  background: var(--accent-blue);
-  border-color: var(--accent-blue);
-  color: #FFFFFF;
+.nav-cv-btn svg {
+  color: var(--text-muted);
+  transition: color var(--trans-fast);
 }
 
 .nav-cv-btn:hover {
-  background: var(--accent-brass-hover);
-  border-color: var(--accent-brass-hover);
+  background: var(--bg-subtle);
+  border-color: var(--text-primary);
+  color: var(--text-primary);
   transform: translateY(-1px);
-  box-shadow: var(--shadow-sm);
 }
 
-[data-theme="archival"] .nav-cv-btn:hover {
-  background: #1e40af;
-  border-color: #1e40af;
-  color: #FFFFFF;
+.nav-cv-btn:hover svg {
+  color: var(--text-primary);
 }
 
 @media (max-width: 640px) {
