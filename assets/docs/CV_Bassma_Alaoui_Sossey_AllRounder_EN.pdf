@@ -7,7 +7,7 @@ endobj
 << /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 7 0 R /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Annots [8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R] >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 7 0 R /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Annots [8 0 R 9 0 R 10 0 R 11 0 R] >>
 endobj
 4 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
@@ -19,175 +19,157 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
 endobj
 7 0 obj
-<< /Length 15593 >>
+<< /Length 15382 >>
 stream
 q
-q 0.965 0.976 0.988 rg 0.00 755.00 595.28 86.89 re f Q
+q 0.965 0.976 0.988 rg 0.00 746.00 595.28 95.89 re f Q
 q 0.010 0.450 0.720 rg 0.00 838.00 595.28 3.89 re f Q
-BT /F2 17.00 Tf 0.060 0.120 0.220 rg 1 0 0 1 36.00 818.00 Tm (BASSMA ALAOUI SOSSEY) Tj ET
-BT /F2 8.60 Tf 0.010 0.450 0.720 rg 1 0 0 1 36.00 803.00 Tm (CYBERSECURITY ENGINEERING STUDENT \(BAC+5 / 2027 INTERNSHIP\)  -  ALL-ROUNDER) Tj ET
-BT /F1 8.00 Tf 0.250 0.300 0.360 rg 1 0 0 1 36.00 789.50 Tm (Fes, Morocco   |   +212 6 70 13 14 02   |   bassmaalaoui04@gmail.com) Tj ET
-BT /F1 8.00 Tf 0.250 0.300 0.360 rg 1 0 0 1 36.00 778.30 Tm (Portfolio : bassma202.github.io   |   GitHub : github.com/Bassma202   |   LinkedIn : linkedin.com/in/bassma-alaoui-sossey-009565293) Tj ET
-q 0.75 w 0.820 0.860 0.900 RG 0.00 755.00 m 595.28 755.00 l S Q
-q 0.010 0.450 0.720 rg 36.00 730.00 3.50 11.00 re f Q
-BT /F2 9.00 Tf 0.060 0.140 0.260 rg 1 0 0 1 44.00 732.00 Tm (PROFESSIONAL SUMMARY) Tj ET
-q 0.75 w 0.820 0.860 0.900 RG 174.97 735.20 m 560.00 735.20 l S Q
-BT /F1 8.20 Tf 0.150 0.180 0.220 rg 1 0 0 1 36.00 719.50 Tm (Final-year Cybersecurity Engineering student at UEMF bridging security governance \(ISO 27001:2022, EBIOS RM, FAIR\),) Tj ET
-BT /F1 8.20 Tf 0.150 0.180 0.220 rg 1 0 0 1 36.00 707.70 Tm (automated DevSecOps guardrails \(GitLab CI/CD, OPA Rego policies\), and defensive engineering \(Zero-Trust IAM, Sysmon, OT DPI\).) Tj ET
-BT /F1 8.20 Tf 0.150 0.180 0.220 rg 1 0 0 1 36.00 695.90 Tm (Author of 6 open-source security tools tested via CI, focused on delivering measurable risk reduction, compliance, and audit readiness.) Tj ET
-q 0.010 0.450 0.720 rg 36.00 673.10 3.50 11.00 re f Q
-BT /F2 9.00 Tf 0.060 0.140 0.260 rg 1 0 0 1 44.00 675.10 Tm (PROFESSIONAL EXPERIENCE) Tj ET
-q 0.75 w 0.820 0.860 0.900 RG 187.58 678.30 m 560.00 678.30 l S Q
-BT /F2 8.80 Tf 0.080 0.150 0.260 rg 1 0 0 1 36.00 662.60 Tm (DataPathology) Tj ET
-BT /F1 7.80 Tf 0.350 0.380 0.420 rg 1 0 0 1 384.77 662.60 Tm (Casablanca, Morocco   |   July 2026 - Sept. 2026) Tj ET
-BT /F3 8.20 Tf 0.180 0.240 0.320 rg 1 0 0 1 36.00 650.80 Tm (Cybersecurity & Data Protection Intern \(Digital Pathology Infrastructure\)) Tj ET
-q 0.010 0.450 0.720 rg 40.50 641.70 m 40.50 642.53 39.83 643.20 39.00 643.20 c 38.17 643.20 37.50 642.53 37.50 641.70 c 37.50 640.87 38.17 640.20 39.00 640.20 c 39.83 640.20 40.50 640.87 40.50 641.70 c f Q
-BT /F1 8.00 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 639.00 Tm (Mapped 100% of sensitive health data flows across 14 ingestion, processing, transmission, and archival checkpoints.) Tj ET
-q 0.010 0.450 0.720 rg 40.50 629.90 m 40.50 630.73 39.83 631.40 39.00 631.40 c 38.17 631.40 37.50 630.73 37.50 629.90 c 37.50 629.07 38.17 628.40 39.00 628.40 c 39.83 628.40 40.50 629.07 40.50 629.90 c f Q
-BT /F1 8.00 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 627.20 Tm (Evaluated 42 regulatory compliance gaps \(Law 09-08/CNDP, ISO 27001\) and modeled RBAC rules reducing unaudited access by 35%.) Tj ET
-q 0.010 0.450 0.720 rg 40.50 618.10 m 40.50 618.93 39.83 619.60 39.00 619.60 c 38.17 619.60 37.50 618.93 37.50 618.10 c 37.50 617.27 38.17 616.60 39.00 616.60 c 39.83 616.60 40.50 617.27 40.50 618.10 c f Q
-BT /F1 8.00 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 615.40 Tm (Standardized 8 remote access procedures and audit logging baselines for digital whole-slide consultation across 3 partner hospitals.) Tj ET
-q 0.010 0.450 0.720 rg 36.00 592.60 3.50 11.00 re f Q
-BT /F2 9.00 Tf 0.060 0.140 0.260 rg 1 0 0 1 44.00 594.60 Tm (FLAGSHIP SECURITY PROJECTS \(OPEN-SOURCE GITHUB PORTFOLIO\)) Tj ET
-q 0.75 w 0.820 0.860 0.900 RG 377.62 597.80 m 560.00 597.80 l S Q
-BT /F2 8.40 Tf 0.080 0.160 0.280 rg 1 0 0 1 36.00 582.10 Tm (Automated GRC & FAIR Quantitative Risk Engine) Tj ET
-BT /F3 7.60 Tf 0.300 0.360 0.420 rg 1 0 0 1 238.52 582.10 Tm (|  FastAPI, ISO 27001:2022, EBIOS RM, FAIR) Tj ET
-BT /F1 7.50 Tf 0.010 0.420 0.700 rg 1 0 0 1 372.52 582.10 Tm (github.com/Bassma202/grc-compliance-automation-tool) Tj ET
-q 0.010 0.450 0.720 rg 40.50 573.30 m 40.50 574.13 39.83 574.80 39.00 574.80 c 38.17 574.80 37.50 574.13 37.50 573.30 c 37.50 572.47 38.17 571.80 39.00 571.80 c 39.83 571.80 40.50 572.47 40.50 573.30 c f Q
-BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 570.60 Tm (Automated gap assessment across all 93 controls of ISO 27001:2022 Annex A, reducing audit prep time by 65%.) Tj ET
-q 0.010 0.450 0.720 rg 40.50 561.90 m 40.50 562.73 39.83 563.40 39.00 563.40 c 38.17 563.40 37.50 562.73 37.50 561.90 c 37.50 561.07 38.17 560.40 39.00 560.40 c 39.83 560.40 40.50 561.07 40.50 561.90 c f Q
-BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 559.20 Tm (Integrated EBIOS RM matrix with FAIR quantitative modeling to calculate Annualized Loss Expectancy \(ALE\) in MAD/EUR.) Tj ET
-q 0.010 0.450 0.720 rg 40.50 550.50 m 40.50 551.33 39.83 552.00 39.00 552.00 c 38.17 552.00 37.50 551.33 37.50 550.50 c 37.50 549.67 38.17 549.00 39.00 549.00 c 39.83 549.00 40.50 549.67 40.50 550.50 c f Q
-BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 547.80 Tm (Generated interactive dashboards prioritizing 100% of technical remediations based on financial exposure.) Tj ET
-BT /F2 8.40 Tf 0.080 0.160 0.280 rg 1 0 0 1 36.00 533.60 Tm (Zero-Trust IAM Gateway & Role Governance \(SoD\)) Tj ET
-BT /F3 7.60 Tf 0.300 0.360 0.420 rg 1 0 0 1 245.36 533.60 Tm (|  Keycloak 22, OAuth 2.0, OIDC, JWT, Python) Tj ET
-BT /F1 7.50 Tf 0.010 0.420 0.700 rg 1 0 0 1 387.11 533.60 Tm (github.com/Bassma202/zerotrust-iam-oidc-gateway) Tj ET
-q 0.010 0.450 0.720 rg 40.50 524.80 m 40.50 525.63 39.83 526.30 39.00 526.30 c 38.17 526.30 37.50 525.63 37.50 524.80 c 37.50 523.97 38.17 523.30 39.00 523.30 c 39.83 523.30 40.50 523.97 40.50 524.80 c f Q
-BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 522.10 Tm (Engineered a PEP validating cryptographic JWT signatures in < 1.2 ms, strictly enforcing least-privilege API access.) Tj ET
-q 0.010 0.450 0.720 rg 40.50 513.40 m 40.50 514.23 39.83 514.90 39.00 514.90 c 38.17 514.90 37.50 514.23 37.50 513.40 c 37.50 512.57 38.17 511.90 39.00 511.90 c 39.83 511.90 40.50 512.57 40.50 513.40 c f Q
-BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 510.70 Tm (Authored an automated matrix analyzer detecting 100% of toxic Segregation of Duties \(SoD\) privilege combinations.) Tj ET
-q 0.010 0.450 0.720 rg 40.50 502.00 m 40.50 502.83 39.83 503.50 39.00 503.50 c 38.17 503.50 37.50 502.83 37.50 502.00 c 37.50 501.17 38.17 500.50 39.00 500.50 c 39.83 500.50 40.50 501.17 40.50 502.00 c f Q
-BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 499.30 Tm (Implemented Jaccard similarity role mining clustering, reducing redundant entitlement assignments by 42%.) Tj ET
-BT /F2 8.40 Tf 0.080 0.160 0.280 rg 1 0 0 1 36.00 485.10 Tm (DevSecOps CI/CD Pipeline & OPA Enforcement) Tj ET
-BT /F3 7.60 Tf 0.300 0.360 0.420 rg 1 0 0 1 232.63 485.10 Tm (|  GitLab CI/CD, Docker, OPA \(Rego\), Trivy, CycloneDX) Tj ET
-BT /F1 7.50 Tf 0.010 0.420 0.700 rg 1 0 0 1 380.43 485.10 Tm (github.com/Bassma202/ai-devsecops-telegram-agent) Tj ET
-q 0.010 0.450 0.720 rg 40.50 476.30 m 40.50 477.13 39.83 477.80 39.00 477.80 c 38.17 477.80 37.50 477.13 37.50 476.30 c 37.50 475.47 38.17 474.80 39.00 474.80 c 39.83 474.80 40.50 475.47 40.50 476.30 c f Q
-BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 473.60 Tm (Integrated automated SAST \(Bandit\) and image scans \(Trivy\), preventing 100% of critical CVEs from reaching build staging.) Tj ET
-q 0.010 0.450 0.720 rg 40.50 464.90 m 40.50 465.73 39.83 466.40 39.00 466.40 c 38.17 466.40 37.50 465.73 37.50 464.90 c 37.50 464.07 38.17 463.40 39.00 463.40 c 39.83 463.40 40.50 464.07 40.50 464.90 c f Q
-BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 462.20 Tm (Enforced Open Policy Agent \(OPA/Rego\) admission rules blocking root execution and produced CycloneDX v1.4 SBOMs.) Tj ET
-q 0.010 0.450 0.720 rg 40.50 453.50 m 40.50 454.33 39.83 455.00 39.00 455.00 c 38.17 455.00 37.50 454.33 37.50 453.50 c 37.50 452.67 38.17 452.00 39.00 452.00 c 39.83 452.00 40.50 452.67 40.50 453.50 c f Q
-BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 450.80 Tm (Configured automated webhook security telemetry notifications, cutting incident notification latency to < 30 seconds.) Tj ET
-BT /F2 8.40 Tf 0.080 0.160 0.280 rg 1 0 0 1 36.00 436.60 Tm (DFIR Detection Lab & Attack Simulation) Tj ET
-BT /F3 7.60 Tf 0.300 0.360 0.420 rg 1 0 0 1 199.80 436.60 Tm (|  Sysmon, Sigma Rules, Atomic Red Team, PowerShell) Tj ET
-BT /F1 7.50 Tf 0.010 0.420 0.700 rg 1 0 0 1 398.79 436.60 Tm (github.com/Bassma202/windows-dfir-atomic-lab) Tj ET
-q 0.010 0.450 0.720 rg 40.50 427.80 m 40.50 428.63 39.83 429.30 39.00 429.30 c 38.17 429.30 37.50 428.63 37.50 427.80 c 37.50 426.97 38.17 426.30 39.00 426.30 c 39.83 426.30 40.50 426.97 40.50 427.80 c f Q
-BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 425.10 Tm (Simulated 12 MITRE ATT&CK adversary chains \(T1059, T1003\) achieving 0 false negatives on custom Sigma detection rules.) Tj ET
-q 0.010 0.450 0.720 rg 40.50 416.40 m 40.50 417.23 39.83 417.90 39.00 417.90 c 38.17 417.90 37.50 417.23 37.50 416.40 c 37.50 415.57 38.17 414.90 39.00 414.90 c 39.83 414.90 40.50 415.57 40.50 416.40 c f Q
-BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 413.70 Tm (Automated digital forensics collection \(memory triage & EVTX artifacts\), slashing incident investigation time by 55%.) Tj ET
-q 0.010 0.450 0.720 rg 40.50 405.00 m 40.50 405.83 39.83 406.50 39.00 406.50 c 38.17 406.50 37.50 405.83 37.50 405.00 c 37.50 404.17 38.17 403.50 39.00 403.50 c 39.83 403.50 40.50 404.17 40.50 405.00 c f Q
-BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 402.30 Tm (Constructed automated ATT&CK coverage mapping correlating Windows event telemetry across persistence vectors.) Tj ET
-BT /F2 8.40 Tf 0.080 0.160 0.280 rg 1 0 0 1 36.00 388.10 Tm (SCADA Industrial Defense Lab & Modbus/TCP) Tj ET
-BT /F3 7.60 Tf 0.300 0.360 0.420 rg 1 0 0 1 226.76 388.10 Tm (|  Python Scapy, Modbus/TCP, Snort/Suricata, PyModbus) Tj ET
-BT /F1 7.50 Tf 0.010 0.420 0.700 rg 1 0 0 1 386.68 388.10 Tm (github.com/Bassma202/scada-modbus-defense-lab) Tj ET
-q 0.010 0.450 0.720 rg 40.50 379.30 m 40.50 380.13 39.83 380.80 39.00 380.80 c 38.17 380.80 37.50 380.13 37.50 379.30 c 37.50 378.47 38.17 377.80 39.00 377.80 c 39.83 377.80 40.50 378.47 40.50 379.30 c f Q
-BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 376.60 Tm (Built an OT DPI firewall sensor filtering industrial Modbus frames and blocking 100% of unauthorized function code injections.) Tj ET
-q 0.010 0.450 0.720 rg 40.50 367.90 m 40.50 368.73 39.83 369.40 39.00 369.40 c 38.17 369.40 37.50 368.73 37.50 367.90 c 37.50 367.07 38.17 366.40 39.00 366.40 c 39.83 366.40 40.50 367.07 40.50 367.90 c f Q
-BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 365.20 Tm (Monitored live PLC register telemetry and correlated physical process thresholds to trigger real-time defensive alerts.) Tj ET
-q 0.010 0.450 0.720 rg 40.50 356.50 m 40.50 357.33 39.83 358.00 39.00 358.00 c 38.17 358.00 37.50 357.33 37.50 356.50 c 37.50 355.67 38.17 355.00 39.00 355.00 c 39.83 355.00 40.50 355.67 40.50 356.50 c f Q
-BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 49.00 353.80 Tm (Formalized industrial anomaly signatures in Snort/Suricata detecting protocol violations across simulated PLCs.) Tj ET
-q 0.010 0.450 0.720 rg 36.00 328.60 3.50 11.00 re f Q
-BT /F2 9.00 Tf 0.060 0.140 0.260 rg 1 0 0 1 44.00 330.60 Tm (TECHNICAL SKILLS) Tj ET
-q 0.75 w 0.820 0.860 0.900 RG 138.74 333.80 m 560.00 333.80 l S Q
-BT /F2 8.00 Tf 0.100 0.160 0.250 rg 1 0 0 1 36.00 318.10 Tm (Governance & Risk:) Tj ET
-BT /F1 7.80 Tf 0.180 0.220 0.260 rg 1 0 0 1 116.62 318.10 Tm (ISO/IEC 27001:2022 \(93 controls\), EBIOS RM, FAIR model \(ALE\), Moroccan Law 09-08/CNDP, GDPR, ITGC, PSSI) Tj ET
-BT /F2 8.00 Tf 0.100 0.160 0.250 rg 1 0 0 1 36.00 306.30 Tm (Identity & Architecture:) Tj ET
-BT /F1 7.80 Tf 0.180 0.220 0.260 rg 1 0 0 1 126.43 306.30 Tm (Zero-Trust, Keycloak, OAuth 2.0 / OIDC, JWT, RBAC/ABAC, Segregation of Duties \(SoD\), Role Mining) Tj ET
-BT /F2 8.00 Tf 0.100 0.160 0.250 rg 1 0 0 1 36.00 294.50 Tm (Cloud & DevSecOps:) Tj ET
-BT /F1 7.80 Tf 0.180 0.220 0.260 rg 1 0 0 1 121.29 294.50 Tm (GitLab CI, GitHub Actions, Docker, OPA \(Rego\), Trivy, Bandit, SBOM CycloneDX, container hardening) Tj ET
-BT /F2 8.00 Tf 0.100 0.160 0.250 rg 1 0 0 1 36.00 282.70 Tm (SOC, DFIR & OT:) Tj ET
-BT /F1 7.80 Tf 0.180 0.220 0.260 rg 1 0 0 1 109.13 282.70 Tm (Sysmon, Sigma rules, Atomic Red Team, Wireshark, memory triage, Modbus/TCP, industrial Suricata/Snort) Tj ET
-BT /F2 8.00 Tf 0.100 0.160 0.250 rg 1 0 0 1 36.00 270.90 Tm (Tooling & Languages:) Tj ET
-BT /F1 7.80 Tf 0.180 0.220 0.260 rg 1 0 0 1 123.64 270.90 Tm (Python \(FastAPI, Scapy, pytest\), Bash, PowerShell, SQL, Linux \(Ubuntu/Debian\), Windows Server AD, Git) Tj ET
-q 0.010 0.450 0.720 rg 36.00 248.10 3.50 11.00 re f Q
-BT /F2 9.00 Tf 0.060 0.140 0.260 rg 1 0 0 1 44.00 250.10 Tm (EDUCATION) Tj ET
-q 0.75 w 0.820 0.860 0.900 RG 105.65 253.30 m 560.00 253.30 l S Q
-BT /F2 8.60 Tf 0.080 0.150 0.260 rg 1 0 0 1 36.00 237.60 Tm (Euro-Mediterranean University of Fes \(UEMF\)) Tj ET
-BT /F1 7.80 Tf 0.350 0.380 0.420 rg 1 0 0 1 409.92 237.60 Tm (Fes, Morocco   |   2022 - 2027 \(Expected\)) Tj ET
-BT /F3 8.10 Tf 0.180 0.240 0.320 rg 1 0 0 1 36.00 225.80 Tm (State Engineering Degree in Cybersecurity \(5-year curriculum / Master's degree equivalent\)) Tj ET
-BT /F3 7.80 Tf 0.280 0.320 0.380 rg 1 0 0 1 36.00 214.30 Tm (Integrated Preparatory Engineering Classes \(Intensive STEM Curriculum\)  -  2022 - 2024) Tj ET
-BT /F1 7.80 Tf 0.260 0.300 0.350 rg 1 0 0 1 36.00 202.80 Tm (Core Courses: IS Governance & Audit, Operating Systems Security & AD, DevSecOps, Networks & SCADA, Cryptography, AI Security.) Tj ET
-q 0.010 0.450 0.720 rg 36.00 180.30 3.50 11.00 re f Q
-BT /F2 9.00 Tf 0.060 0.140 0.260 rg 1 0 0 1 44.00 182.30 Tm (CERTIFICATIONS & SPECIALIZED TRAINING) Tj ET
-q 0.75 w 0.820 0.860 0.900 RG 251.10 185.50 m 560.00 185.50 l S Q
-BT /F2 8.00 Tf 0.100 0.160 0.250 rg 1 0 0 1 36.00 169.80 Tm (ISO/IEC 27001:2022:) Tj ET
-BT /F1 7.80 Tf 0.180 0.220 0.260 rg 1 0 0 1 121.31 169.80 Tm (ISMS Requirements & Implementation \(Lead Implementer curriculum  -  Annex A 93 controls\)) Tj ET
-BT /F2 8.00 Tf 0.100 0.160 0.250 rg 1 0 0 1 36.00 158.00 Tm (Quantitative Risk Analysis:) Tj ET
-BT /F1 7.80 Tf 0.180 0.220 0.260 rg 1 0 0 1 141.35 158.00 Tm (EBIOS Risk Manager & FAIR Quantitative Modeling \(Annualized Loss Expectancy  -  ALE\)) Tj ET
-BT /F2 8.00 Tf 0.100 0.160 0.250 rg 1 0 0 1 36.00 146.20 Tm (Threat Hunting & SOC:) Tj ET
-BT /F1 7.80 Tf 0.180 0.220 0.260 rg 1 0 0 1 128.75 146.20 Tm (Advanced detection engineering using Sysmon, Sigma rules, and Atomic Red Team) Tj ET
-q 0.010 0.450 0.720 rg 36.00 123.40 3.50 11.00 re f Q
-BT /F2 9.00 Tf 0.060 0.140 0.260 rg 1 0 0 1 44.00 125.40 Tm (LANGUAGES) Tj ET
-q 0.75 w 0.820 0.860 0.900 RG 108.82 128.60 m 560.00 128.60 l S Q
-BT /F2 8.00 Tf 0.100 0.160 0.250 rg 1 0 0 1 36.00 112.90 Tm (French:) Tj ET
-BT /F1 7.80 Tf 0.180 0.220 0.260 rg 1 0 0 1 69.48 112.90 Tm (Bilingual / C2  -  Academic instruction, technical reporting & professional audit management) Tj ET
-BT /F2 8.00 Tf 0.100 0.160 0.250 rg 1 0 0 1 36.00 101.10 Tm (English:) Tj ET
-BT /F1 7.80 Tf 0.180 0.220 0.260 rg 1 0 0 1 70.88 101.10 Tm (Full Professional / C1  -  Engineering documentation, international threat research & bilingual delivery) Tj ET
-BT /F2 8.00 Tf 0.100 0.160 0.250 rg 1 0 0 1 36.00 89.30 Tm (Arabic:) Tj ET
-BT /F1 7.80 Tf 0.180 0.220 0.260 rg 1 0 0 1 67.14 89.30 Tm (Native proficiency  -  Bilingual fluency) Tj ET
-BT /F2 8.00 Tf 0.100 0.160 0.250 rg 1 0 0 1 36.00 77.50 Tm (Spanish:) Tj ET
-BT /F1 7.80 Tf 0.180 0.220 0.260 rg 1 0 0 1 73.68 77.50 Tm (Working proficiency \(Level A2 / B1\)) Tj ET
+BT /F2 17.50 Tf 0.060 0.120 0.220 rg 1 0 0 1 38.00 816.00 Tm (BASSMA ALAOUI SOSSEY) Tj ET
+BT /F2 8.70 Tf 0.010 0.450 0.720 rg 1 0 0 1 38.00 800.50 Tm (CYBERSECURITY ENGINEERING STUDENT  -  SEEKING FINAL-YEAR INTERNSHIP \(PFE 6 MONTHS\)) Tj ET
+BT /F3 8.00 Tf 0.300 0.360 0.420 rg 1 0 0 1 38.00 788.50 Tm (Availability: February / March 2027   -    Mobility: France & International) Tj ET
+BT /F1 7.90 Tf 0.220 0.280 0.350 rg 1 0 0 1 38.00 777.00 Tm (+212 6 70 13 14 02   -    bassmaalaoui04@gmail.com   -    Fes, Morocco) Tj ET
+BT /F1 7.90 Tf 0.220 0.280 0.350 rg 1 0 0 1 38.00 766.50 Tm (Portfolio: bassma202.github.io   -    GitHub: github.com/Bassma202   -    LinkedIn: linkedin.com/in/bassma-alaoui-sossey-009565293) Tj ET
+q 0.75 w 0.820 0.860 0.900 RG 0.00 746.00 m 595.28 746.00 l S Q
+q 0.010 0.450 0.720 rg 38.00 725.50 3.50 10.50 re f Q
+BT /F2 8.90 Tf 0.060 0.140 0.260 rg 1 0 0 1 46.00 727.00 Tm (PROFESSIONAL SUMMARY) Tj ET
+q 0.75 w 0.820 0.860 0.900 RG 175.58 730.20 m 557.00 730.20 l S Q
+BT /F1 8.00 Tf 0.150 0.180 0.220 rg 1 0 0 1 38.00 716.00 Tm (Final-year Cybersecurity Engineering student at UEMF bridging security governance \(ISO 27001:2022, EBIOS RM, FAIR\), Zero-Trust) Tj ET
+BT /F1 8.00 Tf 0.150 0.180 0.220 rg 1 0 0 1 38.00 705.00 Tm (IAM architecture, and DevSecOps automated guardrails \(GitLab CI/CD, OPA Rego\). Author of 6 open-source security tools tested in CI/CD.) Tj ET
+BT /F1 8.00 Tf 0.150 0.180 0.220 rg 1 0 0 1 38.00 694.00 Tm (Pragmatic and rigorous, focused on delivering measurable risk reduction, automated compliance validation, and audit readiness.) Tj ET
+q 0.010 0.450 0.720 rg 38.00 672.50 3.50 10.50 re f Q
+BT /F2 8.90 Tf 0.060 0.140 0.260 rg 1 0 0 1 46.00 674.00 Tm (PROFESSIONAL EXPERIENCE) Tj ET
+q 0.75 w 0.820 0.860 0.900 RG 188.05 677.20 m 557.00 677.20 l S Q
+BT /F2 8.70 Tf 0.080 0.150 0.260 rg 1 0 0 1 38.00 663.00 Tm (DataPathology) Tj ET
+BT /F1 7.80 Tf 0.350 0.380 0.420 rg 1 0 0 1 381.77 663.00 Tm (Casablanca, Morocco   |   July 2026 - Sept. 2026) Tj ET
+BT /F3 8.10 Tf 0.180 0.240 0.320 rg 1 0 0 1 38.00 652.00 Tm (Cybersecurity & Health Data Protection Intern \(Digital Pathology Infrastructure\)) Tj ET
+q 0.010 0.450 0.720 rg 42.50 643.70 m 42.50 644.53 41.83 645.20 41.00 645.20 c 40.17 645.20 39.50 644.53 39.50 643.70 c 39.50 642.87 39.50 642.20 41.00 642.20 c 41.83 642.20 42.50 642.87 42.50 643.70 c f Q
+BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 641.00 Tm (Mapped 100% of sensitive medical data flows across 14 ingestion, processing, transmission, and archival checkpoints.) Tj ET
+q 0.010 0.450 0.720 rg 42.50 632.70 m 42.50 633.53 41.83 634.20 41.00 634.20 c 40.17 634.20 39.50 633.53 39.50 632.70 c 39.50 631.87 39.50 631.20 41.00 631.20 c 41.83 631.20 42.50 631.87 42.50 632.70 c f Q
+BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 630.00 Tm (Evaluated 42 regulatory compliance gaps \(Law 09-08/CNDP, ISO 27001\) and modeled RBAC rules reducing unaudited access by 35%.) Tj ET
+q 0.010 0.450 0.720 rg 42.50 621.70 m 42.50 622.53 41.83 623.20 41.00 623.20 c 40.17 623.20 39.50 622.53 39.50 621.70 c 39.50 620.87 39.50 620.20 41.00 620.20 c 41.83 620.20 42.50 620.87 42.50 621.70 c f Q
+BT /F1 7.90 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 619.00 Tm (Standardized 8 remote access security procedures and audit logging baselines for whole-slide access across 3 partner hospitals.) Tj ET
+q 0.010 0.450 0.720 rg 38.00 597.50 3.50 10.50 re f Q
+BT /F2 8.90 Tf 0.060 0.140 0.260 rg 1 0 0 1 46.00 599.00 Tm (FLAGSHIP ENGINEERING PROJECTS \(GITHUB PORTFOLIO\)) Tj ET
+q 0.75 w 0.820 0.860 0.900 RG 321.47 602.20 m 557.00 602.20 l S Q
+BT /F2 8.40 Tf 0.080 0.160 0.280 rg 1 0 0 1 38.00 588.00 Tm (Automated GRC Compliance & FAIR Quantitative Risk Engine) Tj ET
+BT /F2 7.40 Tf 0.010 0.450 0.720 rg 1 0 0 1 487.21 588.00 Tm (Governance & Risk) Tj ET
+BT /F2 7.60 Tf 0.250 0.300 0.360 rg 1 0 0 1 38.00 577.80 Tm (Technologies: ) Tj ET
+BT /F3 7.60 Tf 0.300 0.360 0.420 rg 1 0 0 1 90.33 577.80 Tm (FastAPI, Python, ISO 27001:2022, EBIOS RM, FAIR) Tj ET
+q 0.010 0.450 0.720 rg 42.50 570.00 m 42.50 570.83 41.83 571.50 41.00 571.50 c 40.17 571.50 39.50 570.83 39.50 570.00 c 39.50 569.17 39.50 568.50 41.00 568.50 c 41.83 568.50 42.50 569.17 42.50 570.00 c f Q
+BT /F1 7.80 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 567.30 Tm (Automated gap assessment across all 93 controls of ISO 27001:2022 Annex A, reducing audit preparation time by 65%.) Tj ET
+q 0.010 0.450 0.720 rg 42.50 559.20 m 42.50 560.03 41.83 560.70 41.00 560.70 c 40.17 560.70 39.50 560.03 39.50 559.20 c 39.50 558.37 39.50 557.70 41.00 557.70 c 41.83 557.70 42.50 558.37 42.50 559.20 c f Q
+BT /F1 7.80 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 556.50 Tm (Integrated EBIOS RM matrix with FAIR quantitative modeling to calculate Annualized Loss Expectancy \(ALE\) in EUR and MAD.) Tj ET
+q 0.010 0.450 0.720 rg 42.50 548.40 m 42.50 549.23 41.83 549.90 41.00 549.90 c 40.17 549.90 39.50 549.23 39.50 548.40 c 39.50 547.57 39.50 546.90 41.00 546.90 c 41.83 546.90 42.50 547.57 42.50 548.40 c f Q
+BT /F1 7.80 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 545.70 Tm (Generated interactive executive dashboards prioritizing 100% of technical remediations based on business impact exposure.) Tj ET
+BT /F2 8.40 Tf 0.080 0.160 0.280 rg 1 0 0 1 38.00 532.70 Tm (Zero-Trust IAM Gateway & Role Governance \(SoD\)) Tj ET
+BT /F2 7.40 Tf 0.010 0.450 0.720 rg 1 0 0 1 478.14 532.70 Tm (Identity & Architecture) Tj ET
+BT /F2 7.60 Tf 0.250 0.300 0.360 rg 1 0 0 1 38.00 522.50 Tm (Technologies: ) Tj ET
+BT /F3 7.60 Tf 0.300 0.360 0.420 rg 1 0 0 1 90.33 522.50 Tm (Keycloak 22, OAuth 2.0 / OIDC, JWT, Python, Docker) Tj ET
+q 0.010 0.450 0.720 rg 42.50 514.70 m 42.50 515.53 41.83 516.20 41.00 516.20 c 40.17 516.20 39.50 515.53 39.50 514.70 c 39.50 513.87 39.50 513.20 41.00 513.20 c 41.83 513.20 42.50 513.87 42.50 514.70 c f Q
+BT /F1 7.80 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 512.00 Tm (Engineered a PEP validating cryptographic JWT signatures in < 1.2 ms, strictly enforcing least-privilege API access.) Tj ET
+q 0.010 0.450 0.720 rg 42.50 503.90 m 42.50 504.73 41.83 505.40 41.00 505.40 c 40.17 505.40 39.50 504.73 39.50 503.90 c 39.50 503.07 39.50 502.40 41.00 502.40 c 41.83 502.40 42.50 503.07 42.50 503.90 c f Q
+BT /F1 7.80 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 501.20 Tm (Authored an automated matrix analyzer detecting 100% of toxic Segregation of Duties \(SoD\) privilege combinations.) Tj ET
+q 0.010 0.450 0.720 rg 42.50 493.10 m 42.50 493.93 41.83 494.60 41.00 494.60 c 40.17 494.60 39.50 493.93 39.50 493.10 c 39.50 492.27 39.50 491.60 41.00 491.60 c 41.83 491.60 42.50 492.27 42.50 493.10 c f Q
+BT /F1 7.80 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 490.40 Tm (Implemented Jaccard similarity role mining clustering, reducing redundant entitlement assignments by 42%.) Tj ET
+BT /F2 8.40 Tf 0.080 0.160 0.280 rg 1 0 0 1 38.00 477.40 Tm (DevSecOps CI/CD Pipeline & OPA Compliance Automation) Tj ET
+BT /F2 7.40 Tf 0.010 0.450 0.720 rg 1 0 0 1 482.89 477.40 Tm (Cloud & DevSecOps) Tj ET
+BT /F2 7.60 Tf 0.250 0.300 0.360 rg 1 0 0 1 38.00 467.20 Tm (Technologies: ) Tj ET
+BT /F3 7.60 Tf 0.300 0.360 0.420 rg 1 0 0 1 90.33 467.20 Tm (GitLab CI/CD, Docker, OPA \(Rego\), Trivy, CycloneDX) Tj ET
+q 0.010 0.450 0.720 rg 42.50 459.40 m 42.50 460.23 41.83 460.90 41.00 460.90 c 40.17 460.90 39.50 460.23 39.50 459.40 c 39.50 458.57 39.50 457.90 41.00 457.90 c 41.83 457.90 42.50 458.57 42.50 459.40 c f Q
+BT /F1 7.80 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 456.70 Tm (Integrated automated SAST \(Bandit\) and container image scans \(Trivy\), preventing 100% of critical CVEs before staging.) Tj ET
+q 0.010 0.450 0.720 rg 42.50 448.60 m 42.50 449.43 41.83 450.10 41.00 450.10 c 40.17 450.10 39.50 449.43 39.50 448.60 c 39.50 447.77 39.50 447.10 41.00 447.10 c 41.83 447.10 42.50 447.77 42.50 448.60 c f Q
+BT /F1 7.80 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 445.90 Tm (Enforced Open Policy Agent \(OPA/Rego\) admission rules blocking root execution and produced CycloneDX v1.4 SBOMs.) Tj ET
+q 0.010 0.450 0.720 rg 42.50 437.80 m 42.50 438.63 41.83 439.30 41.00 439.30 c 40.17 439.30 39.50 438.63 39.50 437.80 c 39.50 436.97 39.50 436.30 41.00 436.30 c 41.83 436.30 42.50 436.97 42.50 437.80 c f Q
+BT /F1 7.80 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 435.10 Tm (Configured automated webhook security telemetry notifications, cutting incident notification latency to < 30 seconds.) Tj ET
+BT /F2 8.40 Tf 0.080 0.160 0.280 rg 1 0 0 1 38.00 422.10 Tm (DFIR Detection Lab & Adversary Attack Simulation) Tj ET
+BT /F2 7.40 Tf 0.010 0.450 0.720 rg 1 0 0 1 494.98 422.10 Tm (SOC & Detection) Tj ET
+BT /F2 7.60 Tf 0.250 0.300 0.360 rg 1 0 0 1 38.00 411.90 Tm (Technologies: ) Tj ET
+BT /F3 7.60 Tf 0.300 0.360 0.420 rg 1 0 0 1 90.33 411.90 Tm (Sysmon, Sigma Rules, Atomic Red Team, PowerShell) Tj ET
+q 0.010 0.450 0.720 rg 42.50 404.10 m 42.50 404.93 41.83 405.60 41.00 405.60 c 40.17 405.60 39.50 404.93 39.50 404.10 c 39.50 403.27 39.50 402.60 41.00 402.60 c 41.83 402.60 42.50 403.27 42.50 404.10 c f Q
+BT /F1 7.80 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 401.40 Tm (Simulated 12 MITRE ATT&CK adversary chains \(T1059, T1003\) achieving 0 false negatives on custom Sigma detection rules.) Tj ET
+q 0.010 0.450 0.720 rg 42.50 393.30 m 42.50 394.13 41.83 394.80 41.00 394.80 c 40.17 394.80 39.50 394.13 39.50 393.30 c 39.50 392.47 39.50 391.80 41.00 391.80 c 41.83 391.80 42.50 392.47 42.50 393.30 c f Q
+BT /F1 7.80 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 390.60 Tm (Automated digital forensics collection \(memory triage & EVTX artifacts\), slashing incident investigation time by 55%.) Tj ET
+BT /F2 8.40 Tf 0.080 0.160 0.280 rg 1 0 0 1 38.00 377.60 Tm (SCADA Industrial Defense Lab & Modbus/TCP) Tj ET
+BT /F2 7.40 Tf 0.010 0.450 0.720 rg 1 0 0 1 469.95 377.60 Tm (Industrial Systems & OT) Tj ET
+BT /F2 7.60 Tf 0.250 0.300 0.360 rg 1 0 0 1 38.00 367.40 Tm (Technologies: ) Tj ET
+BT /F3 7.60 Tf 0.300 0.360 0.420 rg 1 0 0 1 90.33 367.40 Tm (Python Scapy, Modbus/TCP, Snort/Suricata, PyModbus) Tj ET
+q 0.010 0.450 0.720 rg 42.50 359.60 m 42.50 360.43 41.83 361.10 41.00 361.10 c 40.17 361.10 39.50 360.43 39.50 359.60 c 39.50 358.77 39.50 358.10 41.00 358.10 c 41.83 358.10 42.50 358.77 42.50 359.60 c f Q
+BT /F1 7.80 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 356.90 Tm (Engineered an OT DPI firewall sensor filtering industrial Modbus frames and blocking 100% of unauthorized function code injections.) Tj ET
+q 0.010 0.450 0.720 rg 42.50 348.80 m 42.50 349.63 41.83 350.30 41.00 350.30 c 40.17 350.30 39.50 349.63 39.50 348.80 c 39.50 347.97 39.50 347.30 41.00 347.30 c 41.83 347.30 42.50 347.97 42.50 348.80 c f Q
+BT /F1 7.80 Tf 0.150 0.180 0.220 rg 1 0 0 1 51.00 346.10 Tm (Monitored live PLC register telemetry and correlated physical process thresholds to trigger real-time defensive alerts.) Tj ET
+q 0.010 0.450 0.720 rg 38.00 322.60 3.50 10.50 re f Q
+BT /F2 8.90 Tf 0.060 0.140 0.260 rg 1 0 0 1 46.00 324.10 Tm (EDUCATION) Tj ET
+q 0.75 w 0.820 0.860 0.900 RG 107.03 327.30 m 557.00 327.30 l S Q
+BT /F2 8.60 Tf 0.080 0.150 0.260 rg 1 0 0 1 38.00 313.10 Tm (Euro-Mediterranean University of Fes \(UEMF\)) Tj ET
+BT /F1 7.80 Tf 0.350 0.380 0.420 rg 1 0 0 1 406.92 313.10 Tm (Fes, Morocco   |   2022 - 2027 \(Expected\)) Tj ET
+BT /F3 8.00 Tf 0.180 0.240 0.320 rg 1 0 0 1 38.00 302.10 Tm (State Engineering Degree in Cybersecurity \(5-year curriculum / Master's degree equivalent\)) Tj ET
+BT /F3 7.70 Tf 0.280 0.320 0.380 rg 1 0 0 1 38.00 291.30 Tm (Integrated Preparatory Engineering Classes \(Intensive STEM Curriculum\)  -  2022 - 2024) Tj ET
+BT /F1 7.70 Tf 0.260 0.300 0.350 rg 1 0 0 1 38.00 280.50 Tm (Core Courses: IS Governance & Audit, Operating Systems Security & AD, DevSecOps, Networks & SCADA, Cryptography, AI Security.) Tj ET
+q 0.010 0.450 0.720 rg 38.00 269.00 3.50 10.50 re f Q
+BT /F2 8.90 Tf 0.060 0.140 0.260 rg 1 0 0 1 46.00 270.50 Tm (TECHNICAL SKILLS) Tj ET
+q 0.75 w 0.820 0.860 0.900 RG 139.76 273.70 m 557.00 273.70 l S Q
+BT /F2 7.90 Tf 0.100 0.160 0.250 rg 1 0 0 1 38.00 259.50 Tm (Governance & Risk:) Tj ET
+BT /F1 7.70 Tf 0.180 0.220 0.260 rg 1 0 0 1 117.67 259.50 Tm (ISO/IEC 27001:2022 \(93 controls\), EBIOS RM, FAIR model \(ALE\), Moroccan Law 09-08/CNDP, GDPR, ITGC, PSSI) Tj ET
+BT /F2 7.90 Tf 0.100 0.160 0.250 rg 1 0 0 1 38.00 248.50 Tm (Identity & Architecture:) Tj ET
+BT /F1 7.70 Tf 0.180 0.220 0.260 rg 1 0 0 1 127.36 248.50 Tm (Zero-Trust, Keycloak, OAuth 2.0 / OIDC, JWT, RBAC/ABAC, Segregation of Duties \(SoD\), Role Mining) Tj ET
+BT /F2 7.90 Tf 0.100 0.160 0.250 rg 1 0 0 1 38.00 237.50 Tm (Cloud & DevSecOps:) Tj ET
+BT /F1 7.70 Tf 0.180 0.220 0.260 rg 1 0 0 1 122.28 237.50 Tm (GitLab CI, GitHub Actions, Docker, OPA \(Rego\), Trivy, Bandit, SBOM CycloneDX, container hardening) Tj ET
+BT /F2 7.90 Tf 0.100 0.160 0.250 rg 1 0 0 1 38.00 226.50 Tm (SOC, DFIR & OT:) Tj ET
+BT /F1 7.70 Tf 0.180 0.220 0.260 rg 1 0 0 1 110.28 226.50 Tm (Sysmon, Sigma rules, Atomic Red Team, Wireshark, memory triage, Modbus/TCP, industrial Suricata/Snort) Tj ET
+BT /F2 7.90 Tf 0.100 0.160 0.250 rg 1 0 0 1 38.00 215.50 Tm (Tooling & Languages:) Tj ET
+BT /F1 7.70 Tf 0.180 0.220 0.260 rg 1 0 0 1 124.61 215.50 Tm (Python \(FastAPI, Scapy, pytest\), Bash, PowerShell, SQL, Linux \(Ubuntu/Debian\), Windows Server AD, Git) Tj ET
+q 0.010 0.450 0.720 rg 38.00 193.00 3.50 10.50 re f Q
+BT /F2 8.90 Tf 0.060 0.140 0.260 rg 1 0 0 1 46.00 194.50 Tm (LANGUAGES) Tj ET
+q 0.75 w 0.820 0.860 0.900 RG 110.16 197.70 m 557.00 197.70 l S Q
+BT /F2 7.90 Tf 0.100 0.160 0.250 rg 1 0 0 1 38.00 183.50 Tm (French:) Tj ET
+BT /F1 7.70 Tf 0.180 0.220 0.260 rg 1 0 0 1 71.12 183.50 Tm (Bilingual / C2  -  Academic instruction, full technical fluency, audit management & executive presentations) Tj ET
+BT /F2 7.90 Tf 0.100 0.160 0.250 rg 1 0 0 1 38.00 172.50 Tm (English:) Tj ET
+BT /F1 7.70 Tf 0.180 0.220 0.260 rg 1 0 0 1 72.51 172.50 Tm (Full Professional / C1  -  Engineering documentation, international threat research & bilingual delivery) Tj ET
+BT /F2 7.90 Tf 0.100 0.160 0.250 rg 1 0 0 1 38.00 161.50 Tm (Arabic:) Tj ET
+BT /F1 7.70 Tf 0.180 0.220 0.260 rg 1 0 0 1 68.81 161.50 Tm (Native proficiency  -  Bilingual fluency) Tj ET
+BT /F2 7.90 Tf 0.100 0.160 0.250 rg 1 0 0 1 38.00 150.50 Tm (Spanish:) Tj ET
+BT /F1 7.70 Tf 0.180 0.220 0.260 rg 1 0 0 1 75.28 150.50 Tm (Working proficiency \(Level A2 / B1\)  -  Technical reading and basic professional exchanges) Tj ET
+q 0.010 0.450 0.720 rg 38.00 128.00 3.50 10.50 re f Q
+BT /F2 8.90 Tf 0.060 0.140 0.260 rg 1 0 0 1 46.00 129.50 Tm (CERTIFICATIONS & SPECIALIZED TRAINING) Tj ET
+q 0.75 w 0.820 0.860 0.900 RG 250.86 132.70 m 557.00 132.70 l S Q
+BT /F2 7.90 Tf 0.100 0.160 0.250 rg 1 0 0 1 38.00 118.50 Tm (ISO/IEC 27001:2022:) Tj ET
+BT /F1 7.70 Tf 0.180 0.220 0.260 rg 1 0 0 1 122.31 118.50 Tm (ISMS Requirements & Implementation \(Lead Implementer curriculum  -  Annex A 93 controls\)) Tj ET
+BT /F2 7.90 Tf 0.100 0.160 0.250 rg 1 0 0 1 38.00 107.50 Tm (Quantitative Risk Analysis:) Tj ET
+BT /F1 7.70 Tf 0.180 0.220 0.260 rg 1 0 0 1 142.10 107.50 Tm (EBIOS Risk Manager & FAIR Quantitative Modeling \(Annualized Loss Expectancy  -  ALE\)) Tj ET
+BT /F2 7.90 Tf 0.100 0.160 0.250 rg 1 0 0 1 38.00 96.50 Tm (Threat Hunting & SOC:) Tj ET
+BT /F1 7.70 Tf 0.180 0.220 0.260 rg 1 0 0 1 129.66 96.50 Tm (Advanced detection engineering using Sysmon, Sigma rules, and Atomic Red Team) Tj ET
 Q
 
 endstream
 endobj
 8 0 obj
-<< /Type /Annot /Subtype /Link /Rect [192.39 788.50 297.21 798.50] /Border [0 0 0] /A << /Type /Action /S /URI /URI (mailto:bassmaalaoui04@gmail.com) >> >>
+<< /Type /Annot /Subtype /Link /Rect [128.61 776.00 232.14 785.50] /Border [0 0 0] /A << /Type /Action /S /URI /URI (mailto:bassmaalaoui04@gmail.com) >> >>
 endobj
 9 0 obj
-<< /Type /Annot /Subtype /Link /Rect [72.90 777.30 148.71 787.30] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://bassma202.github.io) >> >>
+<< /Type /Annot /Subtype /Link /Rect [71.80 765.50 146.70 775.00] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://bassma202.github.io) >> >>
 endobj
 10 0 obj
-<< /Type /Annot /Subtype /Link /Rect [197.22 777.30 282.82 787.30] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Bassma202) >> >>
+<< /Type /Annot /Subtype /Link /Rect [194.24 765.50 278.79 775.00] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Bassma202) >> >>
 endobj
 11 0 obj
-<< /Type /Annot /Subtype /Link /Rect [336.67 777.30 516.07 787.30] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://linkedin.com/in/bassma-alaoui-sossey-009565293) >> >>
-endobj
-12 0 obj
-<< /Type /Annot /Subtype /Link /Rect [372.52 581.10 560.00 590.60] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Bassma202/grc-compliance-automation-tool) >> >>
-endobj
-13 0 obj
-<< /Type /Annot /Subtype /Link /Rect [387.11 532.60 560.00 542.10] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Bassma202/zerotrust-iam-oidc-gateway) >> >>
-endobj
-14 0 obj
-<< /Type /Annot /Subtype /Link /Rect [380.43 484.10 560.00 493.60] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Bassma202/ai-devsecops-telegram-agent) >> >>
-endobj
-15 0 obj
-<< /Type /Annot /Subtype /Link /Rect [398.79 435.60 560.00 445.10] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Bassma202/windows-dfir-atomic-lab) >> >>
-endobj
-16 0 obj
-<< /Type /Annot /Subtype /Link /Rect [386.68 387.10 560.00 396.60] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Bassma202/scada-modbus-defense-lab) >> >>
+<< /Type /Annot /Subtype /Link /Rect [331.60 765.50 508.79 775.00] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://linkedin.com/in/bassma-alaoui-sossey-009565293) >> >>
 endobj
 xref
-0 17
+0 12
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
 0000000121 00000 n 
-0000000344 00000 n 
-0000000441 00000 n 
-0000000543 00000 n 
-0000000648 00000 n 
-0000016294 00000 n 
-0000016465 00000 n 
-0000016631 00000 n 
-0000016800 00000 n 
-0000016995 00000 n 
-0000017195 00000 n 
-0000017391 00000 n 
-0000017588 00000 n 
-0000017781 00000 n 
+0000000309 00000 n 
+0000000406 00000 n 
+0000000508 00000 n 
+0000000613 00000 n 
+0000016048 00000 n 
+0000016219 00000 n 
+0000016385 00000 n 
+0000016554 00000 n 
 trailer
-<< /Size 17 /Root 1 0 R >>
+<< /Size 12 /Root 1 0 R >>
 startxref
-17975
+16749
 %%EOF
