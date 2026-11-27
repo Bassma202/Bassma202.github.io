@@ -54,11 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.lab": "Security Lab",
       "nav.experience": "Experience",
       "nav.contact": "Contact",
+      "nav.download_cv": "Download CV",
       "hero.status": "Seeking 4–6 Month PFE Internship (Feb 2027) • Paris, France, Morocco & Europe",
       "hero.title": "Engineering trust in <em>complex systems.</em>",
       "hero.sub": "Final-Year Cybersecurity Engineering Student at UEMF specializing in Zero-Trust Architecture, DevSecOps Automation, GRC & FAIR Quantitative Risk, and Defensive Detection Engineering.",
       "hero.cta_projects": "Explore Flagship Systems",
       "hero.cta_cv": "Executive Résumé",
+      "hero.download_cv": "Download CV (PDF)",
       "hero.kicker_inst": "Observatory & Verified Metrics",
       "hero.inst_lbl1": "Open-Source Security Tools Tested via CI",
       "hero.inst_lbl2": "Annex A Controls Automated (ISO 27001)",
@@ -94,11 +96,13 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.lab": "Laboratoire",
       "nav.experience": "Expérience",
       "nav.contact": "Contact",
+      "nav.download_cv": "Télécharger CV",
       "hero.status": "Recherche Stage PFE (4–6 mois dès Fév. 2027) • Paris, France, Maroc & Europe",
       "hero.title": "Bâtir la confiance dans les <em>systèmes complexes.</em>",
       "hero.sub": "Élève-ingénieure en dernière année à l'UEMF, alliant gouvernance des risques (ISO 27001, EBIOS RM, FAIR), architecture IAM Zero-Trust, automatisation DevSecOps et ingénierie de détection SOC.",
       "hero.cta_projects": "Découvrir les Projets",
       "hero.cta_cv": "Télécharger le CV",
+      "hero.download_cv": "Télécharger le CV (PDF)",
       "hero.kicker_inst": "Observatoire & Métriques Vérifiées",
       "hero.inst_lbl1": "Solutions de Sécurité Open-Source en CI",
       "hero.inst_lbl2": "Contrôles Annexe A Automatisés (ISO 27001)",
@@ -155,6 +159,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetLang = el.getAttribute('data-lang-content');
       el.style.display = targetLang === lang ? '' : 'none';
     });
+
+    // Update CV download buttons dynamically to matched language
+    const cvPath = lang === 'fr' 
+      ? 'assets/docs/CV_Bassma_Alaoui_Sossey_AllRounder_FR.pdf' 
+      : 'assets/docs/CV_Bassma_Alaoui_Sossey_AllRounder_EN.pdf';
+    const navCvBtn = document.getElementById('navCvDownloadBtn');
+    if (navCvBtn) navCvBtn.setAttribute('href', cvPath);
+    const heroCvBtn = document.getElementById('heroCvDownloadBtn');
+    if (heroCvBtn) heroCvBtn.setAttribute('href', cvPath);
   }
 
   const savedLang = localStorage.getItem('bassma_lang') || 'en';

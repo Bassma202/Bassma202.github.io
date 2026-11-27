@@ -527,6 +527,52 @@ button {
   border-radius: 2px;
 }
 
+.nav-cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #0D1017;
+  background: var(--accent-brass);
+  border: 1px solid var(--accent-brass);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all var(--trans-base);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+[data-theme="archival"] .nav-cv-btn {
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+  color: #FFFFFF;
+}
+
+.nav-cv-btn:hover {
+  background: var(--accent-brass-hover);
+  border-color: var(--accent-brass-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+[data-theme="archival"] .nav-cv-btn:hover {
+  background: #1e40af;
+  border-color: #1e40af;
+  color: #FFFFFF;
+}
+
+@media (max-width: 640px) {
+  .nav-cv-btn span {
+    display: none;
+  }
+  .nav-cv-btn {
+    padding: 0.35rem 0.55rem;
+  }
+}
+
 .mobile-toggle {
   display: none;
   width: 36px;
