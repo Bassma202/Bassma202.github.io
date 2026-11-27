@@ -66,45 +66,45 @@
   --code-border: #1E2838;
 }
 
-/* ARCHIVAL THEME (LIGHT VELLUM) */
+/* ARCHIVAL THEME (CRISP WHITE / LIGHT) */
 [data-theme="archival"] {
-  --bg-primary: #F5F2EA;
-  --bg-surface: #FCFAF6;
-  --bg-surface-elevated: #EDE8DE;
-  --bg-surface-glass: rgba(252, 250, 246, 0.92);
-  --bg-subtle: #E2DBD0;
+  --bg-primary: #FAFAFC;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #F4F6F9;
+  --bg-surface-glass: rgba(255, 255, 255, 0.94);
+  --bg-subtle: #EDF2F7;
   
-  --border-primary: #C5BCAD;
-  --border-subtle: #DCD5C8;
-  --border-focus: #8C6D46;
+  --border-primary: #E2E8F0;
+  --border-subtle: #EDF2F7;
+  --border-focus: #1D4ED8;
 
-  --text-primary: #202126;
-  --text-secondary: #4A525D;
-  --text-muted: #6E7885;
-  --text-dim: #8E98A5;
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+  --text-dim: #94A3B8;
 
-  --accent-brass: #8C6D46;
-  --accent-brass-hover: #755935;
-  --accent-brass-glow: rgba(140, 109, 70, 0.12);
+  --accent-brass: #B45309;
+  --accent-brass-hover: #92400E;
+  --accent-brass-glow: rgba(180, 83, 9, 0.08);
   
-  --accent-blue: #1E3A5F;
-  --accent-blue-dim: rgba(30, 58, 95, 0.08);
+  --accent-blue: #1D4ED8;
+  --accent-blue-dim: rgba(29, 78, 216, 0.08);
   --accent-cyan: #0284C7;
-  --accent-emerald: #047857;
-  --accent-amber: #B45309;
-  --accent-crimson: #B91C1C;
+  --accent-emerald: #059669;
+  --accent-amber: #D97706;
+  --accent-crimson: #DC2626;
 
-  --shadow-sm: 0 1px 3px rgba(32, 33, 38, 0.06);
-  --shadow-md: 0 4px 14px rgba(32, 33, 38, 0.08);
-  --shadow-lg: 0 12px 32px rgba(32, 33, 38, 0.12);
-  --shadow-glow: 0 0 24px rgba(140, 109, 70, 0.06);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 14px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.09);
+  --shadow-glow: 0 0 24px rgba(29, 78, 216, 0.05);
 
-  --badge-bg: rgba(226, 219, 208, 0.6);
-  --badge-border: rgba(197, 188, 173, 0.7);
-  --badge-text: #202126;
+  --badge-bg: #F1F5F9;
+  --badge-border: #E2E8F0;
+  --badge-text: #0F172A;
 
-  --code-bg: #EAE4D7;
-  --code-border: #D0C7B7;
+  --code-bg: #F8FAFC;
+  --code-border: #E2E8F0;
 }
 
 /* ----------------- BASE & RESET ----------------- */
@@ -1196,64 +1196,6 @@ button {
   min-height: 52px;
   display: flex;
   align-items: center;
-}
-
-/* ----------------- RESEARCH & INTELLECTUAL ARCHIVE ----------------- */
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-}
-
-.research-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-primary);
-  border-radius: var(--radius-md);
-  padding: 2rem;
-  transition: all var(--trans-base);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.research-card:hover {
-  border-color: var(--accent-brass);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-}
-
-.research-theme-kicker {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  color: var(--accent-brass);
-  letter-spacing: 0.08em;
-  margin-bottom: 0.75rem;
-}
-
-.research-title {
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
-  font-weight: 500;
-  line-height: 1.28;
-  color: var(--text-primary);
-  margin-bottom: 0.85rem;
-}
-
-.research-abstract {
-  font-size: 0.92rem;
-  color: var(--text-secondary);
-  line-height: 1.62;
-  margin-bottom: 1.5rem;
-}
-
-.research-meta {
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
 }
 
 /* ----------------- EXPERIENCE & EDUCATION ----------------- */

@@ -28,14 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  const savedTheme = localStorage.getItem('bassma_theme') || 
-    (window.matchMedia('(prefers-color-scheme: light)').matches ? 'archival' : 'nocturnal');
+  const savedTheme = localStorage.getItem('bassma_theme') || 'archival';
   applyTheme(savedTheme);
 
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme') || 'nocturnal';
-      const newTheme = currentTheme === 'nocturnal' ? 'archival' : 'nocturnal';
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'archival';
+      const newTheme = currentTheme === 'archival' ? 'nocturnal' : 'archival';
       applyTheme(newTheme);
     });
   }
@@ -53,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.archive": "Archive",
       "nav.atlas": "Knowledge Atlas",
       "nav.lab": "Security Lab",
-      "nav.research": "Research",
       "nav.experience": "Experience",
       "nav.contact": "Contact",
       "hero.status": "Seeking 4–6 Month PFE Internship (Feb 2027) • Paris, France, Morocco & Europe",
@@ -78,9 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
       "lab.kicker": "Interactive Demonstrations",
       "lab.title": "Cybersecurity Interactive Laboratory",
       "lab.desc": "Inspect live demonstrations of architectural security concepts using simulated telemetry, token verification, and quantitative modeling.",
-      "research.kicker": "Interdisciplinary Studies",
-      "research.title": "Research & Intellectual Archive",
-      "research.desc": "Exploring the intersections of cybersecurity, digital pathology data protection, astronomical observatories, aerospace resilience, and digital manuscript provenance.",
       "exp.kicker": "Career Trajectory",
       "exp.title": "Experience & Academic Milestones",
       "exp.desc": "Rigorous five-year engineering education (Bac+5 Grade Master) combined with healthcare cybersecurity risk assessment experience.",
@@ -97,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
       "nav.archive": "Archives",
       "nav.atlas": "Atlas des Savoirs",
       "nav.lab": "Laboratoire",
-      "nav.research": "Recherche",
       "nav.experience": "Expérience",
       "nav.contact": "Contact",
       "hero.status": "Recherche Stage PFE (4–6 mois dès Fév. 2027) • Paris, France, Maroc & Europe",
@@ -122,9 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
       "lab.kicker": "Démonstrations Interactives",
       "lab.title": "Laboratoire Interactif de Cybersécurité",
       "lab.desc": "Testez en direct des concepts d'architecture de sécurité : inspection de jetons JWT, filtrage DPI Modbus et simulation quantitative FAIR.",
-      "research.kicker": "Études Interdisciplinaires",
-      "research.title": "Recherche & Archives Intellectuelles",
-      "research.desc": "À la croisée de la cybersécurité, de la protection des données de santé en pathologie digitale, des observatoires astronomiques et de la préservation patrimoniale.",
       "exp.kicker": "Trajectoire Professionnelle",
       "exp.title": "Expérience & Formation Académique",
       "exp.desc": "Cursus d'ingénieur d'État en 5 ans (Bac+5 Grade Master, CPGE intégrées) et stage d'ingénieur en cybersécurité médicale.",
