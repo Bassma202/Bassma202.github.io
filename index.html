@@ -1,504 +1,1236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="nocturnal">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bassma Alaoui Sossey | Cybersecurity Engineering & Defensive Systems</title>
-  <meta name="description" content="Portfolio of Bassma Alaoui Sossey — Final-Year Cybersecurity Engineering Student at UEMF. Specializing in GRC, Zero-Trust Architecture, DevSecOps, Threat Detection, and Defensive Systems.">
+  <meta name="description" content="Portfolio of Bassma Alaoui Sossey — Final-Year Cybersecurity Engineering Student at Université Euromed de Fès (UEMF). Specializing in Zero-Trust Architecture, DevSecOps, FAIR Quantitative Risk, and Defensive Systems.">
+  <meta name="author" content="Bassma Alaoui Sossey">
+  
+  <!-- Open Graph & Social Preview -->
+  <meta property="og:title" content="Bassma Alaoui Sossey | Cybersecurity Engineering & Defensive Systems">
+  <meta property="og:description" content="Production-grade cybersecurity architectures, automated verification suites, FAIR risk models, and defensive detection labs.">
+  <meta property="og:url" content="https://bassma202.github.io/">
+  <meta property="og:type" content="website">
+
+  <!-- Typography: Editorial Serif + Precision Sans + Technical Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header class="navbar">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">
-        <span class="logo-terminal">&gt;_</span>
-        <span class="logo-text">bassma<span class="logo-dot">.</span>sec</span>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" role="banner">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand" aria-label="Bassma Alaoui Sossey — Homepage">
+        <div class="brand-monogram">BA</div>
+        <div class="brand-info">
+          <span class="brand-name">Bassma Alaoui Sossey</span>
+          <span class="brand-title">Cybersecurity Engineer</span>
+        </div>
       </a>
-      <nav class="nav-links" id="navLinks">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#domains" class="nav-link">Engineering Domains</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#guides" class="nav-link">Technical Guides</a>
-        <a href="#contact" class="nav-link">Contact</a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Main Navigation">
+        <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="#flagship" class="nav-link" data-i18n="nav.projects">Flagship Engineering</a>
+        <a href="#archive" class="nav-link" data-i18n="nav.archive">Archive</a>
+        <a href="#atlas" class="nav-link" data-i18n="nav.atlas">Knowledge Atlas</a>
+        <a href="#laboratory" class="nav-link" data-i18n="nav.lab">Security Lab</a>
+        <a href="#research" class="nav-link" data-i18n="nav.research">Research</a>
+        <a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
       </nav>
-      <div class="nav-actions">
-        <a href="assets/docs/CV_Bassma_Alaoui_Sossey_AllRounder_EN.pdf" download class="btn btn-outline btn-sm">
-          <span>CV (EN)</span>
-        </a>
-        <a href="assets/docs/CV_Bassma_Alaoui_Sossey_AllRounder_FR.pdf" download class="btn btn-primary btn-sm">
-          <span>CV (FR)</span>
-        </a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+
+      <!-- Controls: Search, Theme, Language -->
+      <div class="nav-controls">
+        <!-- Command Palette Trigger -->
+        <button class="cmd-trigger-btn" id="cmdTriggerBtn" aria-label="Open Command Palette (Cmd+K)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span class="cmd-shortcut">⌘K</span>
+        </button>
+
+        <!-- Bilingual Switcher -->
+        <div class="ctrl-pill" role="group" aria-label="Language selection">
+          <button class="ctrl-btn active" id="langEnBtn" title="English">EN</button>
+          <button class="ctrl-btn" id="langFrBtn" title="Français">FR</button>
+        </div>
+
+        <!-- Theme Switcher (Nocturnal Dark / Archival Light) -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Nocturnal / Archival Theme" title="Toggle Theme">
+          <span id="themeIcon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-glow"></div>
-    <div class="container hero-content">
-      <div class="status-badge">
-        <span class="status-pulse"></span>
-        <span>Open to PFE 2027 Engineering Internships (Spring / Summer)</span>
-      </div>
-      <h1 class="hero-title">
-        Engineering Resilient Systems with <span class="gradient-text">Zero-Trust</span>, <span class="gradient-text">DevSecOps</span> & <span class="gradient-text">Quantified Risk</span>.
-      </h1>
-      <p class="hero-subtitle">
-        Hi, I'm <strong>Bassma Alaoui Sossey</strong>, a final-year Cybersecurity Engineering student at the <strong>Euro-Mediterranean University of Fes (UEMF)</strong>. I design and build production-grade defensive tools spanning technical compliance (ISO 27001, EBIOS RM, FAIR), identity governance (Keycloak, OIDC), automated CI/CD guardrails, and runtime threat detection.
-      </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">
-          <span>Explore 6 Flagship Projects</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="https://github.com/Bassma202" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          <span>GitHub Portfolio</span>
-        </a>
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+
+    <!-- HERO SECTION: Contemporary Heritage × Scientific Modernism -->
+    <section class="hero-section" id="hero">
+      <!-- Astronomical & Celestial Coordinates SVG Watermark -->
+      <div class="hero-celestial-canvas" aria-hidden="true">
+        <svg viewBox="0 0 600 600" fill="none" stroke="currentColor" stroke-width="0.75" style="color: var(--accent-brass);">
+          <circle cx="300" cy="300" r="260" stroke-dasharray="4 4" />
+          <circle cx="300" cy="300" r="195" />
+          <circle cx="300" cy="300" r="130" stroke-dasharray="2 3" />
+          <circle cx="300" cy="300" r="65" />
+          <line x1="40" y1="300" x2="560" y2="300" />
+          <line x1="300" y1="40" x2="300" y2="560" />
+          <line x1="116" y1="116" x2="484" y2="484" stroke-dasharray="3 3" />
+          <line x1="116" y1="484" x2="484" y2="116" stroke-dasharray="3 3" />
+        </svg>
       </div>
 
-      <!-- Quick Metrics Bar -->
-      <div class="metrics-grid">
-        <div class="metric-card">
-          <span class="metric-number">6</span>
-          <span class="metric-label">Production GitHub Repositories</span>
-        </div>
-        <div class="metric-card">
-          <span class="metric-number">93</span>
-          <span class="metric-label">ISO 27001:2022 Controls Automated</span>
-        </div>
-        <div class="metric-card">
-          <span class="metric-number">&lt; 0.04 ms</span>
-          <span class="metric-label">Guardrail Proxy Latency</span>
-        </div>
-        <div class="metric-card">
-          <span class="metric-number">100%</span>
-          <span class="metric-label">Automated CI/CD Test Pass Rate</span>
-        </div>
-      </div>
-    </div>
-  </section>
+      <div class="container hero-grid">
+        <div class="hero-content-col">
+          <!-- Status Pill -->
+          <div class="hero-status-pill">
+            <span class="pulse-dot"></span>
+            <span data-i18n="hero.status">Seeking 4–6 Month PFE Internship (Feb 2027) • Paris, France, Morocco & Europe</span>
+          </div>
 
-  <!-- Section 1: About Me -->
-  <section class="section about-section" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// 01. BACKGROUND</span>
-        <h2 class="section-title">About Me</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-card main-bio">
-          <p class="about-lead">
-            I am a final-year engineering student in <strong>Cybersecurity</strong> at the <strong>Euro-Mediterranean University of Fes (UEMF)</strong>, graduating in 2027. My engineering practice bridges strategic risk management, access governance, and hands-on systems defense.
+          <!-- Editorial Headline -->
+          <h1 class="hero-headline" data-i18n="hero.title">
+            Engineering trust in <em>complex systems.</em>
+          </h1>
+
+          <!-- Subheading -->
+          <p class="hero-subheading" data-i18n="hero.sub">
+            Final-Year Cybersecurity Engineering Student at UEMF specializing in Zero-Trust Architecture, DevSecOps Automation, GRC & FAIR Quantitative Risk, and Defensive Detection Engineering.
           </p>
-          <p>
-            During my internship at <strong>DataPathology</strong> in Casablanca, I worked on securing cloud and on-premise clinical imaging infrastructure. I mapped sensitive healthcare data pipelines across 14 ingestion, processing, and archival nodes, evaluated compliance gaps against Moroccan Law 09-08 and ISO 27001, and modeled access control policies that cut unaudited user access by 35%.
-          </p>
-          <p>
-            I focus on building security solutions that are <em>pragmatic, automated, and quantitatively measured</em>. All my technical implementations are publicly auditable on GitHub with automated unit tests, continuous integration pipelines, and reproducible benchmarks.
-          </p>
-          <div class="bio-highlights">
-            <div class="bio-item">
-              <span class="bio-icon">🎓</span>
-              <div>
-                <strong>UEMF Cybersecurity Degree</strong>
-                <p>5-year State Engineering Degree, European Master's level equivalent (2022–2027)</p>
-              </div>
+
+          <!-- Action CTAs -->
+          <div class="hero-actions">
+            <a href="#flagship" class="btn btn-primary" data-i18n="hero.cta_projects">Explore Flagship Systems</a>
+            <a href="#resume" class="btn btn-outline" data-i18n="hero.cta_cv">Executive Résumé</a>
+            <a href="https://github.com/Bassma202" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/bassma-alaoui-sossey-009565293" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <!-- Academic & Professional Credential Row -->
+          <div class="hero-credentials-row">
+            <div class="cred-item">
+              <span class="cred-kicker">Institution</span>
+              <span class="cred-val">Université Euromed de Fès (UEMF — EIDIA)</span>
             </div>
-            <div class="bio-item">
-              <span class="bio-icon">🏥</span>
-              <div>
-                <strong>DataPathology Internship</strong>
-                <p>Digital Pathology Security & Data Protection Governance (Casablanca)</p>
-              </div>
+            <div class="cred-item">
+              <span class="cred-kicker">Degree Track</span>
+              <span class="cred-val">Diplôme d'Ingénieur d'État (Bac+5 / 2027)</span>
             </div>
-            <div class="bio-item">
-              <span class="bio-icon">🌍</span>
-              <div>
-                <strong>Global Mobility</strong>
-                <p>Available for PFE internships in Morocco, France, and Internationally</p>
-              </div>
+            <div class="cred-item">
+              <span class="cred-kicker">Certifications</span>
+              <span class="cred-val">DALF C1 (2022)</span>
             </div>
           </div>
         </div>
 
-        <div class="about-card education-card">
-          <h3 class="card-subtitle">Education & Key Coursework</h3>
-          <ul class="timeline">
-            <li class="timeline-item">
-              <span class="timeline-year">2022 — 2027</span>
-              <div class="timeline-content">
-                <h4>State Engineering Degree in Cybersecurity</h4>
-                <p class="institution">Université Euromed de Fès (UEMF)</p>
-                <div class="course-chips">
-                  <span>IS Governance & Audit</span>
-                  <span>Operating Systems & AD</span>
-                  <span>DevSecOps & CI/CD</span>
-                  <span>SCADA & Industrial Networks</span>
-                  <span>Applied Cryptography</span>
-                  <span>AI Security & Guardrails</span>
-                  <span>Data Protection Law (09-08 / GDPR)</span>
+        <!-- Hero Scientific Instrument Card -->
+        <div class="hero-instrument-col">
+          <div class="hero-instrument-card">
+            <div class="card-astrolabe-corner">EPHEMERIS 2027</div>
+            <div class="instrument-hdr" data-i18n="hero.kicker_inst">Observatory & Verified Metrics</div>
+
+            <div class="instrument-metric-grid">
+              <div class="metric-box">
+                <div class="metric-num">6+</div>
+                <div class="metric-label" data-i18n="hero.inst_lbl1">Open-Source Security Tools Tested via CI</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-num">93</div>
+                <div class="metric-label" data-i18n="hero.inst_lbl2">Annex A Controls Automated (ISO 27001)</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-num">&lt;1.2ms</div>
+                <div class="metric-label" data-i18n="hero.inst_lbl3">Cryptographic JWT PEP Verification Latency</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-num">0%</div>
+                <div class="metric-label" data-i18n="hero.inst_lbl4">False Negatives Across ATT&CK Regressions</div>
+              </div>
+            </div>
+
+            <div class="instrument-status-list">
+              <div class="status-row">
+                <span class="status-label">Continuous Integration</span>
+                <span class="status-indicator verified">● Verified Passing (GitHub Actions)</span>
+              </div>
+              <div class="status-row">
+                <span class="status-label">Primary Languages</span>
+                <span class="status-indicator">Python, PowerShell, Bash, Rego, C</span>
+              </div>
+              <div class="status-row">
+                <span class="status-label">Standards Focus</span>
+                <span class="status-indicator">ISO 27001, EBIOS RM, FAIR, NIST 800-207</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: ABOUT & PHILOSOPHY -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker" data-i18n="nav.about">About Bassma</span>
+          <h2 class="section-title">Bridging Technical Rigor with Scientific Curiosity</h2>
+          <p class="section-desc editorial-lead">
+            I am a final-year cybersecurity engineering student at the Euro-Mediterranean University of Fes (UEMF), driven by a deep fascination with how complex, distributed systems remain resilient against intelligent adversaries.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; align-items: start;">
+          <div>
+            <p style="margin-bottom: 1.25rem; color: var(--text-secondary); line-height: 1.75;">
+              My engineering approach is anchored in verifiable controls, mathematical and quantitative risk modeling, and defensive architecture. Rather than relying on generic security tropes, every solution I build is backed by automated tests, cryptographic signatures, reproducible attack simulations, and honest limitation disclosures.
+            </p>
+            <p style="margin-bottom: 1.25rem; color: var(--text-secondary); line-height: 1.75;">
+              My intellectual background draws inspiration from the enduring traditions of scientific exploration: the architectural precision of historical observatories, the rigorous provenance of archival manuscripts, the mathematical geometries of celestial cartography, and the high-reliability engineering of aerospace missions.
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.75;">
+              I am actively seeking a four to six-month final-year engineering internship (PFE) starting February 2027 in France (with particular interest in Paris and Île-de-France), Morocco, or internationally across Security Engineering, Identity & Cloud Security, DevSecOps, or Governance & Quantitative Risk.
+            </p>
+          </div>
+
+          <div style="background: var(--bg-primary); border: 1px solid var(--border-primary); border-radius: var(--radius-md); padding: 2rem;">
+            <h3 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--accent-brass); margin-bottom: 1.25rem;">Core Professional Anchors</h3>
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <div style="display: flex; gap: 0.85rem;">
+                <span style="color: var(--accent-brass); font-family: var(--font-mono); font-weight: 600;">01</span>
+                <div>
+                  <strong style="display: block; color: var(--text-primary); font-size: 0.95rem; margin-bottom: 0.2rem;">Deterministic Defensive Engineering</strong>
+                  <span style="font-size: 0.84rem; color: var(--text-secondary);">Designing fail-closed perimeters, least-privilege API gateways, and rigorous input canonicalization over heuristic assumptions.</span>
                 </div>
               </div>
-            </li>
-          </ul>
-
-          <h3 class="card-subtitle mt-4">Languages</h3>
-          <div class="lang-grid">
-            <div class="lang-item"><span>French</span><strong>Bilingual / Fluent</strong></div>
-            <div class="lang-item"><span>English</span><strong>Fluent (Technical C1)</strong></div>
-            <div class="lang-item"><span>Arabic</span><strong>Native</strong></div>
-            <div class="lang-item"><span>German</span><strong>Basic Notions</strong></div>
+              <div style="display: flex; gap: 0.85rem;">
+                <span style="color: var(--accent-brass); font-family: var(--font-mono); font-weight: 600;">02</span>
+                <div>
+                  <strong style="display: block; color: var(--text-primary); font-size: 0.95rem; margin-bottom: 0.2rem;">Quantitative Financial Risk Assessment</strong>
+                  <span style="font-size: 0.84rem; color: var(--text-secondary);">Employing the Factor Analysis of Information Risk (FAIR) methodology to model loss frequencies and business impact in real currency.</span>
+                </div>
+              </div>
+              <div style="display: flex; gap: 0.85rem;">
+                <span style="color: var(--accent-brass); font-family: var(--font-mono); font-weight: 600;">03</span>
+                <div>
+                  <strong style="display: block; color: var(--text-primary); font-size: 0.95rem; margin-bottom: 0.2rem;">Verifiable & Reproducible Artifacts</strong>
+                  <span style="font-size: 0.84rem; color: var(--text-secondary);">Ensuring every repository features automated CI regression testing, test suites, and transparent threat models.</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Section 2: Technical Domains -->
-  <section class="section interests-section" id="domains">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// 02. CORE EXPERTISE</span>
-        <h2 class="section-title">Core Engineering Domains</h2>
-        <p class="section-desc">Six operational cybersecurity disciplines where I build, test, and audit security solutions.</p>
-      </div>
-
-      <div class="pillars-grid">
-        <!-- Pillar 1 -->
-        <div class="pillar-card">
-          <div class="pillar-header">
-            <span class="pillar-num">01</span>
-            <span class="pillar-badge">Governance & Assurance</span>
+    <!-- SECTION 2: FLAGSHIP CYBERSECURITY ARCHITECTURES (7 Major Systems) -->
+    <section class="section" id="flagship">
+      <div class="container">
+        <div class="section-header section-header-split">
+          <div>
+            <span class="section-kicker" data-i18n="flagship.kicker">Defensive Systems Portfolio</span>
+            <h2 class="section-title" data-i18n="flagship.title">Flagship Cybersecurity Architectures</h2>
+            <p class="section-desc" data-i18n="flagship.desc">
+              Production-grade, open-source security implementations equipped with automated verification suites, threat models, CI/CD gates, and verifiable evidence.
+            </p>
           </div>
-          <h3>GRC & Quantitative Risk (FAIR)</h3>
-          <p>Automating Statement of Applicability audits across all 93 controls of ISO/IEC 27001:2022. Integrating qualitative EBIOS RM matrices with Open FAIR quantitative models to calculate Annualized Loss Expectancy (ALE) in currency.</p>
-          <div class="tech-tags">
-            <span>ISO 27001:2022</span><span>EBIOS RM</span><span>FAIR</span><span>Law 09-08</span><span>GDPR</span><span>DORA</span>
+          <div>
+            <a href="#archive" class="btn btn-outline btn-sm">View Complete Archive (12+ Projects) →</a>
           </div>
         </div>
 
-        <!-- Pillar 2 -->
-        <div class="pillar-card">
-          <div class="pillar-header">
-            <span class="pillar-num">02</span>
-            <span class="pillar-badge">Identity & Architecture</span>
-          </div>
-          <h3>Zero-Trust IAM & Role Governance</h3>
-          <p>Architecting Policy Enforcement Points (PEPs) for OIDC/OAuth2 JWT validation. Algorithmic Segregation of Duties (SoD) toxic combination detection and Jaccard similarity role mining to eliminate entitlement drift.</p>
-          <div class="tech-tags">
-            <span>Keycloak 22</span><span>OAuth 2.0</span><span>OIDC</span><span>JWT</span><span>RBAC / ABAC</span><span>SoD Matrix</span>
-          </div>
-        </div>
+        <div class="flagship-grid">
 
-        <!-- Pillar 3 -->
-        <div class="pillar-card">
-          <div class="pillar-header">
-            <span class="pillar-num">03</span>
-            <span class="pillar-badge">DevSecOps & Platform</span>
-          </div>
-          <h3>Continuous CI/CD Compliance</h3>
-          <p>Embedding automated SAST (Bandit), SCA (Safety), and container scanning (Trivy) into delivery pipelines. Enforcing Policy-as-Code admission gates via Open Policy Agent (OPA/Rego) and tracking CycloneDX SBOMs.</p>
-          <div class="tech-tags">
-            <span>GitLab CI</span><span>GitHub Actions</span><span>Docker</span><span>OPA Rego</span><span>Trivy</span><span>CycloneDX</span>
-          </div>
-        </div>
+          <!-- 1. AETHER (SCADA/Modbus) -->
+          <article class="project-card">
+            <div>
+              <div class="project-meta-row">
+                <span class="project-codename">AETHER</span>
+                <span class="project-domain">Industrial & OT/ICS</span>
+              </div>
+              <h3 class="project-title">SCADA / Modbus TCP Defense Lab</h3>
+              <p class="project-summary">
+                Bounded Modbus/TCP industrial security gateway and deep packet inspection (DPI) sensor protecting cyber-physical pumping stations and PLC registers.
+              </p>
+              <div class="project-metrics-box">
+                <div class="metric-title">Verified Evidence</div>
+                <div class="metric-data">p50=0.292 ms TCP latency (3,040 req/s); 27-thread deadlock-free race safety; live PCAP triggers 4/4 Suricata 7 alerts (0 FP).</div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python 3.12</span>
+                <span class="tech-tag">PyModbus</span>
+                <span class="tech-tag">Scapy</span>
+                <span class="tech-tag">Suricata 7</span>
+                <span class="tech-tag">Wireshark</span>
+                <span class="tech-tag">IEC 62443</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#" class="card-link" data-open-case="aether">Technical Case Study →</a>
+              <a href="https://github.com/Bassma202/scada-modbus-defense-lab" target="_blank" rel="noopener noreferrer" class="badge">GitHub</a>
+            </div>
+          </article>
 
-        <!-- Pillar 4 -->
-        <div class="pillar-card">
-          <div class="pillar-header">
-            <span class="pillar-num">04</span>
-            <span class="pillar-badge">Detection & Response</span>
-          </div>
-          <h3>Detection-as-Code & DFIR</h3>
-          <p>Simulating adversarial tradecraft (Atomic Red Team) and collecting low-level Windows Sysmon telemetry. Developing automated compilers that translate vendor-neutral Sigma detection signatures into Splunk SPL and Elastic KQL queries.</p>
-          <div class="tech-tags">
-            <span>Sysmon</span><span>Sigma Compiler</span><span>Atomic Red Team</span><span>Splunk SPL</span><span>Elastic KQL</span><span>MITRE ATT&CK</span>
-          </div>
-        </div>
+          <!-- 2. VESPER (DFIR) -->
+          <article class="project-card">
+            <div>
+              <div class="project-meta-row">
+                <span class="project-codename">VESPER</span>
+                <span class="project-domain">SOC & Detection Engineering</span>
+              </div>
+              <h3 class="project-title">Windows DFIR & Threat Hunting Lab</h3>
+              <p class="project-summary">
+                Reproducible forensic lab emulating 12 MITRE ATT&CK adversary chains (T1059, T1003) with Sysmon, automated EVTX extraction, and pySigma rule compilation.
+              </p>
+              <div class="project-metrics-box">
+                <div class="metric-title">Verified Evidence</div>
+                <div class="metric-data">100% precision & 0% FPR across 12-case regression; dual-runner CI (ubuntu + windows); automated triage cuts investigation time by 55%.</div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Sysmon</span>
+                <span class="tech-tag">pySigma</span>
+                <span class="tech-tag">Atomic Red Team</span>
+                <span class="tech-tag">python-evtx</span>
+                <span class="tech-tag">Splunk SPL</span>
+                <span class="tech-tag">Elastic ECS</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#" class="card-link" data-open-case="vesper">Technical Case Study →</a>
+              <a href="https://github.com/Bassma202/windows-dfir-atomic-lab" target="_blank" rel="noopener noreferrer" class="badge">GitHub</a>
+            </div>
+          </article>
 
-        <!-- Pillar 5 -->
-        <div class="pillar-card">
-          <div class="pillar-header">
-            <span class="pillar-num">05</span>
-            <span class="pillar-badge">Defensive AI & Guardrails</span>
-          </div>
-          <h3>AI Application Security & Guardrails</h3>
-          <p>Building sub-millisecond security proxies that protect LLMs against direct/indirect prompt injection, exfiltration of secrets, and PII leaks. Auditing RAG chunk stores and sandboxing Model Context Protocol (MCP) tool execution.</p>
-          <div class="tech-tags">
-            <span>OWASP LLM Top 10</span><span>Prompt Defense</span><span>PII Redaction</span><span>RAG Auditor</span><span>MCP Sandbox</span><span>EU AI Act</span>
-          </div>
-        </div>
+          <!-- 3. CONSERVA (GRC) -->
+          <article class="project-card">
+            <div>
+              <div class="project-meta-row">
+                <span class="project-codename">CONSERVA</span>
+                <span class="project-domain">Governance & Quantitative Risk</span>
+              </div>
+              <h3 class="project-title">GRC Compliance & FAIR Risk Engine</h3>
+              <p class="project-summary">
+                Multi-tenant compliance engine automating gap assessment across all 93 controls of ISO/IEC 27001:2022 Annex A, Law 09-08, EBIOS RM, and FAIR Monte Carlo.
+              </p>
+              <div class="project-metrics-box">
+                <div class="metric-title">Verified Evidence</div>
+                <div class="metric-data">-65% audit prep time; compound Poisson-PERT simulation error &lt;3% from analytical mean; financial ALE in MAD/EUR.</div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">ISO 27001:2022</span>
+                <span class="tech-tag">FAIR Model</span>
+                <span class="tech-tag">EBIOS RM</span>
+                <span class="tech-tag">Loi 09-08</span>
+                <span class="tech-tag">SQLite</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#" class="card-link" data-open-case="conserva">Technical Case Study →</a>
+              <a href="https://github.com/Bassma202/grc-compliance-automation-tool" target="_blank" rel="noopener noreferrer" class="badge">GitHub</a>
+            </div>
+          </article>
 
-        <!-- Pillar 6 -->
-        <div class="pillar-card">
-          <div class="pillar-header">
-            <span class="pillar-num">06</span>
-            <span class="pillar-badge">Critical Infrastructure</span>
-          </div>
-          <h3>SCADA & Industrial Network Defense</h3>
-          <p>Implementing Zero-Trust Deep Packet Inspection (DPI) proxies on industrial protocols (Modbus TCP). Writing specialized Suricata OT rules and validating deterministic latency constraints (&lt; 1 ms) in railway and utility environments.</p>
-          <div class="tech-tags">
-            <span>Modbus TCP</span><span>Suricata OT</span><span>Wireshark PCAP</span><span>DPI Gateway</span><span>IEC 62443</span><span>Purdue Model</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+          <!-- 4. LIMEN (Zero Trust) -->
+          <article class="project-card">
+            <div>
+              <div class="project-meta-row">
+                <span class="project-codename">LIMEN</span>
+                <span class="project-domain">Identity & Zero Trust</span>
+              </div>
+              <h3 class="project-title">Zero-Trust IAM & OIDC API Gateway</h3>
+              <p class="project-summary">
+                Policy Enforcement Point (PEP) validating RS256 JWT claims against Keycloak 26 JWKS in &lt;1.2 ms, with atomic Segregation of Duties (SoD) and Role Mining.
+              </p>
+              <div class="project-metrics-box">
+                <div class="metric-title">Verified Evidence</div>
+                <div class="metric-data">Live Keycloak 26 + PostgreSQL 16 validation; 100% detection of toxic privilege combinations; Jaccard clustering eliminates 42% redundant rights.</div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Keycloak 26</span>
+                <span class="tech-tag">OAuth2 / OIDC</span>
+                <span class="tech-tag">JWT RS256</span>
+                <span class="tech-tag">SoD Analyzer</span>
+                <span class="tech-tag">Role Mining</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#" class="card-link" data-open-case="limen">Technical Case Study →</a>
+              <a href="https://github.com/Bassma202/zerotrust-iam-oidc-gateway" target="_blank" rel="noopener noreferrer" class="badge">GitHub</a>
+            </div>
+          </article>
 
-  <!-- Section 3: Flagship Projects -->
-  <section class="section projects-section" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// 03. OPEN SOURCE PORTFOLIO</span>
-        <h2 class="section-title">Flagship Security Projects</h2>
-        <p class="section-desc">Six production-grade, tested repositories published live on my GitHub profile.</p>
-      </div>
+          <!-- 5. ALETHEIA (AI Security) -->
+          <article class="project-card">
+            <div>
+              <div class="project-meta-row">
+                <span class="project-codename">ALETHEIA</span>
+                <span class="project-domain">AI & LLM Security</span>
+              </div>
+              <h3 class="project-title">AI Guardrail & LLM Security Proxy</h3>
+              <p class="project-summary">
+                Defense proxy mitigating the OWASP LLM Top 10 (2025): prompt injection firewalls, PII sanitization (Luhn/NIR/CIN), pre-retrieval RAG ACLs, and MCP tool checks.
+              </p>
+              <div class="project-metrics-box">
+                <div class="metric-title">Verified Evidence</div>
+                <div class="metric-data">Frozen held-out ablation test: Policy Violation dropped from 58.3% to 0.0%; 0.0% false refusal rate; 0.102 ms p50 inspection latency.</div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Ollama</span>
+                <span class="tech-tag">OWASP LLM</span>
+                <span class="tech-tag">RAG Security</span>
+                <span class="tech-tag">MCP JSON-RPC</span>
+                <span class="tech-tag">PII Scrubber</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#" class="card-link" data-open-case="aletheia">Technical Case Study →</a>
+              <a href="https://github.com/Bassma202/llm-guardrail-security-proxy" target="_blank" rel="noopener noreferrer" class="badge">GitHub</a>
+            </div>
+          </article>
 
-      <!-- Filter Tabs -->
-      <div class="project-filters">
-        <button class="filter-btn active" data-filter="all">All Projects (6)</button>
-        <button class="filter-btn" data-filter="grc">GRC & Audit</button>
-        <button class="filter-btn" data-filter="iam">Zero-Trust IAM</button>
-        <button class="filter-btn" data-filter="devsecops">DevSecOps</button>
-        <button class="filter-btn" data-filter="soc">Detection & DFIR</button>
-        <button class="filter-btn" data-filter="ai">Defensive AI</button>
-        <button class="filter-btn" data-filter="ot">OT / SCADA</button>
-      </div>
+          <!-- 6. FORGE (DevSecOps) -->
+          <article class="project-card">
+            <div>
+              <div class="project-meta-row">
+                <span class="project-codename">FORGE</span>
+                <span class="project-domain">Software Supply Chain & DevSecOps</span>
+              </div>
+              <h3 class="project-title">DevSecOps CI/CD Automation Agent</h3>
+              <p class="project-summary">
+                Automated security pipeline enforcing fail-closed OPA Rego v1 admission policies, CycloneDX v1.5 SBOM generation, Trivy container scans, and Ed25519 signing.
+              </p>
+              <div class="project-metrics-box">
+                <div class="metric-title">Verified Evidence</div>
+                <div class="metric-data">8/8 OPA 1.1.0 policy tests pass; 67-component verified SBOM; Ed25519 1-byte tamper block; webhook incident notifications in &lt;30s.</div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">GitLab CI</span>
+                <span class="tech-tag">GitHub Actions</span>
+                <span class="tech-tag">OPA Rego</span>
+                <span class="tech-tag">CycloneDX</span>
+                <span class="tech-tag">Trivy</span>
+                <span class="tech-tag">Ed25519</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#" class="card-link" data-open-case="forge">Technical Case Study →</a>
+              <a href="https://github.com/Bassma202/ai-devsecops-telegram-agent" target="_blank" rel="noopener noreferrer" class="badge">GitHub</a>
+            </div>
+          </article>
 
-      <div class="projects-grid">
-        <!-- Project 1: GRC Automation -->
-        <div class="project-card" data-category="grc">
-          <div class="project-top">
-            <span class="project-domain">GRC & Risk Engineering</span>
-            <a href="https://github.com/Bassma202/grc-compliance-automation-tool" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View on GitHub">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
-          <h3 class="project-title">grc-compliance-automation-tool</h3>
-          <p class="project-summary">Automated compliance verification engine auditing all 93 controls of ISO/IEC 27001:2022 Statement of Applicability and Moroccan Law 09-08 / CNDP health data safeguards.</p>
-          <div class="project-metric">
-            <span class="metric-highlight">-65%</span> audit preparation time; calculates Annualized Loss Expectancy (ALE in MAD/EUR) via FAIR engine.
-          </div>
-          <div class="tech-tags">
-            <span>Python</span><span>FastAPI</span><span>ISO 27001:2022</span><span>EBIOS RM</span><span>FAIR ALE</span><span>HTML Report</span>
-          </div>
-        </div>
+          <!-- 7. UPGRADED ACTIVE DIRECTORY LAB -->
+          <article class="project-card" style="grid-column: 1 / -1;">
+            <div>
+              <div class="project-meta-row">
+                <span class="project-codename">ACTIVE DIRECTORY</span>
+                <span class="project-domain">Enterprise Identity & Control Validation</span>
+              </div>
+              <h3 class="project-title">Active Directory Security Assessment & Control Validation</h3>
+              <p class="project-summary">
+                Comprehensive enterprise identity security assessment in a Windows Server Active Directory forest (ECYBER.local / atlas.local). Features BloodHound privilege graph analysis, PingCastle hygiene scoring, GPO baseline hardening, and mitigation of LLMNR poisoning, NTLM relay, and unauthenticated LDAP queries.
+              </p>
+              <div class="project-metrics-box">
+                <div class="metric-title">Verified Evidence</div>
+                <div class="metric-data">Simulated and remediated lateral movement attack chains; severed shortest privilege paths to Domain Admins; enforced SMB signing and LDAP channel binding; verified via Wazuh event telemetry.</div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Windows Server 2022/2025</span>
+                <span class="tech-tag">AD DS / GPO</span>
+                <span class="tech-tag">BloodHound</span>
+                <span class="tech-tag">PingCastle</span>
+                <span class="tech-tag">LDAPDomainDump</span>
+                <span class="tech-tag">PowerShell</span>
+                <span class="tech-tag">Kali Linux</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="#" class="card-link" data-open-case="activedirectory">Technical Case Study →</a>
+              <a href="https://github.com/Bassma202/atlas-soc-detection-lab" target="_blank" rel="noopener noreferrer" class="badge">GitHub</a>
+            </div>
+          </article>
 
-        <!-- Project 2: Zero-Trust IAM -->
-        <div class="project-card" data-category="iam">
-          <div class="project-top">
-            <span class="project-domain">Identity & Architecture</span>
-            <a href="https://github.com/Bassma202/zerotrust-iam-oidc-gateway" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View on GitHub">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
-          <h3 class="project-title">zerotrust-iam-oidc-gateway</h3>
-          <p class="project-summary">Policy Enforcement Point (PEP) validating cryptographic JWT signatures in &lt; 1.2 ms, with a toxic combination Segregation of Duties (SoD) auditor and Jaccard role clustering.</p>
-          <div class="project-metric">
-            <span class="metric-highlight">-42%</span> redundant entitlements; 100% detection of toxic privilege conflicts (creator/approver).
-          </div>
-          <div class="tech-tags">
-            <span>Keycloak 22</span><span>OAuth 2.0</span><span>OIDC</span><span>JWT PEP</span><span>SoD Auditor</span><span>Role Mining</span>
-          </div>
-        </div>
-
-        <!-- Project 3: Defensive AI -->
-        <div class="project-card" data-category="ai">
-          <div class="project-top">
-            <span class="project-domain">Defensive AI Security</span>
-            <a href="https://github.com/Bassma202/llm-guardrail-security-proxy" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View on GitHub">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
-          <h3 class="project-title">llm-guardrail-security-proxy</h3>
-          <p class="project-summary">Ultra-fast zero-dependency ingress/egress proxy blocking prompt injections, redacting PII (NIR, CIN, CC), auditing RAG documents, and sandboxing MCP tool executions.</p>
-          <div class="project-metric">
-            <span class="metric-highlight">0.036 ms</span> evaluation latency; 100% precision & recall against adversarial jailbreak benchmarks.
-          </div>
-          <div class="tech-tags">
-            <span>Python</span><span>Regex PII</span><span>Prompt Firewall</span><span>RAG Auditor</span><span>MCP Sandbox</span><span>OWASP LLM</span>
-          </div>
-        </div>
-
-        <!-- Project 4: DevSecOps -->
-        <div class="project-card" data-category="devsecops">
-          <div class="project-top">
-            <span class="project-domain">DevSecOps & Platform</span>
-            <a href="https://github.com/Bassma202/ai-devsecops-telegram-agent" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View on GitHub">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
-          <h3 class="project-title">ai-devsecops-telegram-agent</h3>
-          <p class="project-summary">Continuous integration pipeline integrating SAST (Bandit), container scans (Trivy), Open Policy Agent (OPA/Rego) non-root admission gates, and CycloneDX v1.4 SBOM generation.</p>
-          <div class="project-metric">
-            <span class="metric-highlight">100%</span> critical container CVEs blocked in CI; automated telemetry notifications via webhook in &lt; 30s.
-          </div>
-          <div class="tech-tags">
-            <span>GitLab CI</span><span>Docker</span><span>OPA Rego</span><span>Trivy</span><span>Bandit</span><span>CycloneDX SBOM</span>
-          </div>
-        </div>
-
-        <!-- Project 5: Detection & DFIR -->
-        <div class="project-card" data-category="soc">
-          <div class="project-top">
-            <span class="project-domain">SOC & Detection Engineering</span>
-            <a href="https://github.com/Bassma202/windows-dfir-atomic-lab" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View on GitHub">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
-          <h3 class="project-title">windows-dfir-atomic-lab</h3>
-          <p class="project-summary">Enterprise Detection-as-Code compiler and DFIR triage framework testing MITRE ATT&CK techniques against hardened Sysmon schemas, generating verified Splunk and Elastic rules.</p>
-          <div class="project-metric">
-            <span class="metric-highlight">0 false negatives</span> on Atomic tests (T1059, T1003, T1547); parses Event IDs 1, 10, and 13 natively.
-          </div>
-          <div class="tech-tags">
-            <span>Sysmon XML</span><span>Sigma Compiler</span><span>Atomic Red Team</span><span>Splunk SPL</span><span>Elastic KQL</span><span>PowerShell</span>
-          </div>
-        </div>
-
-        <!-- Project 6: SCADA & OT -->
-        <div class="project-card" data-category="ot">
-          <div class="project-top">
-            <span class="project-domain">OT / SCADA Security</span>
-            <a href="https://github.com/Bassma202/scada-modbus-defense-lab" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View on GitHub">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
-          <h3 class="project-title">scada-modbus-defense-lab</h3>
-          <p class="project-summary">Deterministic zero-trust DPI gateway for Modbus TCP industrial protocols with synthetic attack/defense PCAP captures and tailored Suricata rules for railway/pump telemetry.</p>
-          <div class="project-metric">
-            <span class="metric-highlight">&lt; 0.85 ms</span> inspection latency; 100% interception of unauthorized register writes (FC 0x05, 0x06).
-          </div>
-          <div class="tech-tags">
-            <span>Python Sockets</span><span>Modbus TCP</span><span>Suricata OT</span><span>Wireshark PCAP</span><span>Terminal UI</span><span>Zero-Trust</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 4: Technical Guides & Whitepapers -->
-  <section class="section reports-section" id="guides">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// 04. TECHNICAL DOCUMENTATION</span>
-        <h2 class="section-title">Engineering Guides & Specifications</h2>
-        <p class="section-desc">Downloadable technical briefs, methodology frameworks, and interview dossiers.</p>
-      </div>
-
-      <div class="reports-grid">
-        <div class="report-card">
-          <div class="report-badge">Interview Dossier (PDF)</div>
-          <h3>Guide de Maîtrise des 6 Projets Phares & Défense Technique</h3>
-          <p>Exhaustive 5-page vector technical guide detailing architectures, design trade-offs, and anticipated technical questions/answers across all 6 projects.</p>
-          <div class="report-footer">
-            <span class="report-meta">5 Pages · Vector PDF · 2026/2027</span>
-            <a href="assets/docs/Guide_Maitrise_Projets_Bassma_Alaoui_Sossey.pdf" download class="btn btn-sm btn-outline">Download PDF</a>
-          </div>
-        </div>
-
-        <div class="report-card">
-          <div class="report-badge">Technical Whitepaper</div>
-          <h3>Quantitative Cyber Risk Assessment: EBIOS RM & Open FAIR</h3>
-          <p>Methodological integration of qualitative ANSSI EBIOS RM matrices with quantitative FAIR Monte Carlo simulations to calculate Annualized Loss Expectancy (ALE) for executive boards.</p>
-          <div class="report-footer">
-            <span class="report-meta">Technical Report · GRC Architecture</span>
-            <a href="https://github.com/Bassma202/grc-compliance-automation-tool" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Read on GitHub</a>
-          </div>
-        </div>
-
-        <div class="report-card">
-          <div class="report-badge">Architecture Spec</div>
-          <h3>Deterministic Zero-Trust Deep Packet Inspection on Modbus TCP</h3>
-          <p>Design specification for sub-millisecond industrial protocol proxies, function code whitelisting, and Suricata OT rule tuning in critical transport infrastructure.</p>
-          <div class="report-footer">
-            <span class="report-meta">Architecture Spec · OT Security</span>
-            <a href="https://github.com/Bassma202/scada-modbus-defense-lab" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Read on GitHub</a>
-          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Section 5: Contact Information -->
-  <section class="section contact-section" id="contact">
-    <div class="container">
-      <div class="contact-box">
-        <div class="contact-header">
-          <span class="section-tag">// 05. CONNECT</span>
-          <h2 class="section-title">Let's Discuss Opportunities</h2>
-          <p class="contact-desc">
-            I am currently interviewing for 6-month end-of-study engineering internships (PFE 2027) starting in early 2027. Whether you have an open role in GRC, DevSecOps, IAM, or SOC detection, I would be delighted to connect.
+    <!-- SECTION 3: APPLIED & ACADEMIC REPOSITORY ARCHIVE -->
+    <section class="section section-alt" id="archive">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker" data-i18n="archive.kicker">Academic & Applied Catalogue</span>
+          <h2 class="section-title" data-i18n="archive.title">Applied & Academic Repository Archive</h2>
+          <p class="section-desc" data-i18n="archive.desc">
+            Searchable registry of academic coursework, applied cybersecurity investigations, and software engineering projects from Euro-Mediterranean University of Fes.
           </p>
         </div>
 
-        <div class="contact-details">
-          <div class="contact-card">
-            <span class="contact-label">Direct Email</span>
-            <div class="copy-field">
-              <span id="emailText">bassmaalaoui04@gmail.com</span>
-              <button id="copyEmailBtn" class="copy-btn" title="Copy email">Copy</button>
-            </div>
+        <!-- Archive Filter Controls -->
+        <div class="archive-controls">
+          <div class="filter-pills" role="tablist">
+            <button class="filter-pill active" data-filter="all">All Projects (12)</button>
+            <button class="filter-pill" data-filter="flagship">Flagship Systems (6)</button>
+            <button class="filter-pill" data-filter="applied">Applied Cyber & SOC (3)</button>
+            <button class="filter-pill" data-filter="academic">Academic & Systems (3)</button>
           </div>
-          <div class="contact-card">
-            <span class="contact-label">LinkedIn</span>
-            <a href="https://linkedin.com/in/bassma-alaoui-sossey-009565293" target="_blank" rel="noopener noreferrer" class="contact-link">
-              linkedin.com/in/bassma-alaoui-sossey-009565293
-            </a>
-          </div>
-          <div class="contact-card">
-            <span class="contact-label">GitHub Portfolio</span>
-            <a href="https://github.com/Bassma202" target="_blank" rel="noopener noreferrer" class="contact-link">
-              github.com/Bassma202
-            </a>
-          </div>
-          <div class="contact-card">
-            <span class="contact-label">Phone & Location</span>
-            <span class="contact-val">+212 6 70 13 14 02 · Fez, Morocco (Mobile)</span>
+          <div class="archive-search-box">
+            <svg class="archive-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="archiveSearchInput" class="archive-search-input" placeholder="Search by tech, standard, title...">
           </div>
         </div>
 
-        <div class="cv-download-banner">
-          <div>
-            <h4>Download My Executive CV (1-Page Vector PDF)</h4>
-            <p>ATS-optimized, tailored with quantified metrics and direct code citations.</p>
+        <!-- Table Display -->
+        <div style="overflow-x: auto;">
+          <table class="archive-table">
+            <thead>
+              <tr>
+                <th>System / Repository</th>
+                <th>Category</th>
+                <th>Core Stack & Protocol</th>
+                <th>Primary Outcome / Metric</th>
+                <th>Repository</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Flagships -->
+              <tr class="archive-row" data-category="flagship">
+                <td>
+                  <span class="archive-repo-title">AETHER — Modbus TCP Defense Lab</span>
+                  <span class="archive-repo-sub">scada-modbus-defense-lab</span>
+                </td>
+                <td><span class="badge badge-brass">Flagship OT</span></td>
+                <td>Python, Scapy, PyModbus, Suricata 7</td>
+                <td>p50=0.292 ms, 4/4 Suricata alerts triggered</td>
+                <td><a href="https://github.com/Bassma202/scada-modbus-defense-lab" target="_blank" rel="noopener noreferrer" class="card-link">View Repo ↗</a></td>
+              </tr>
+              <tr class="archive-row" data-category="flagship">
+                <td>
+                  <span class="archive-repo-title">VESPER — Windows DFIR Lab</span>
+                  <span class="archive-repo-sub">windows-dfir-atomic-lab</span>
+                </td>
+                <td><span class="badge badge-brass">Flagship SOC</span></td>
+                <td>Sysmon, pySigma, Atomic Red Team, EVTX</td>
+                <td>100% precision / 0% FPR on 12 ATT&CK chains</td>
+                <td><a href="https://github.com/Bassma202/windows-dfir-atomic-lab" target="_blank" rel="noopener noreferrer" class="card-link">View Repo ↗</a></td>
+              </tr>
+              <tr class="archive-row" data-category="flagship">
+                <td>
+                  <span class="archive-repo-title">CONSERVA — GRC & FAIR Platform</span>
+                  <span class="archive-repo-sub">grc-compliance-automation-tool</span>
+                </td>
+                <td><span class="badge badge-brass">Flagship GRC</span></td>
+                <td>FastAPI, ISO 27001:2022, FAIR, EBIOS RM</td>
+                <td>-65% audit prep time, 93 Annex A controls automated</td>
+                <td><a href="https://github.com/Bassma202/grc-compliance-automation-tool" target="_blank" rel="noopener noreferrer" class="card-link">View Repo ↗</a></td>
+              </tr>
+              <tr class="archive-row" data-category="flagship">
+                <td>
+                  <span class="archive-repo-title">LIMEN — Zero-Trust IAM Gateway</span>
+                  <span class="archive-repo-sub">zerotrust-iam-oidc-gateway</span>
+                </td>
+                <td><span class="badge badge-brass">Flagship IAM</span></td>
+                <td>Keycloak 26, OAuth2/OIDC, JWT RS256, SoD</td>
+                <td>&lt;1.2 ms PEP check, 100% toxic SoD detected</td>
+                <td><a href="https://github.com/Bassma202/zerotrust-iam-oidc-gateway" target="_blank" rel="noopener noreferrer" class="card-link">View Repo ↗</a></td>
+              </tr>
+              <tr class="archive-row" data-category="flagship">
+                <td>
+                  <span class="archive-repo-title">ALETHEIA — LLM Guardrail Proxy</span>
+                  <span class="archive-repo-sub">llm-guardrail-security-proxy</span>
+                </td>
+                <td><span class="badge badge-brass">Flagship AI</span></td>
+                <td>Python, Ollama, OWASP LLM, MCP JSON-RPC</td>
+                <td>Policy violations 58.3% → 0.0%, 0.102 ms latency</td>
+                <td><a href="https://github.com/Bassma202/llm-guardrail-security-proxy" target="_blank" rel="noopener noreferrer" class="card-link">View Repo ↗</a></td>
+              </tr>
+              <tr class="archive-row" data-category="flagship">
+                <td>
+                  <span class="archive-repo-title">FORGE — DevSecOps Automation</span>
+                  <span class="archive-repo-sub">ai-devsecops-telegram-agent</span>
+                </td>
+                <td><span class="badge badge-brass">Flagship CI/CD</span></td>
+                <td>GitLab CI, OPA Rego 1.1.0, Trivy, Ed25519</td>
+                <td>8/8 OPA tests pass, 1-byte tamper detection blocked</td>
+                <td><a href="https://github.com/Bassma202/ai-devsecops-telegram-agent" target="_blank" rel="noopener noreferrer" class="card-link">View Repo ↗</a></td>
+              </tr>
+
+              <!-- Applied Cyber -->
+              <tr class="archive-row" data-category="applied">
+                <td>
+                  <span class="archive-repo-title">Atlas SOC Detection Lab</span>
+                  <span class="archive-repo-sub">atlas-soc-detection-lab</span>
+                </td>
+                <td><span class="badge badge-blue">Applied SOC</span></td>
+                <td>Windows Server 2025, Wazuh SIEM, UTM arm64</td>
+                <td>Isolated domain controller (atlas.local) security auditing</td>
+                <td><a href="https://github.com/Bassma202/atlas-soc-detection-lab" target="_blank" rel="noopener noreferrer" class="card-link">View Repo ↗</a></td>
+              </tr>
+              <tr class="archive-row" data-category="applied">
+                <td>
+                  <span class="archive-repo-title">Android Secure Notes</span>
+                  <span class="archive-repo-sub">android-secure-notes</span>
+                </td>
+                <td><span class="badge badge-blue">Mobile Security</span></td>
+                <td>Kotlin, Room DB, Coroutines, FLAG_SECURE</td>
+                <td>PIN gate, encrypted local storage, screen recording block</td>
+                <td><a href="https://github.com/Bassma202/android-secure-notes" target="_blank" rel="noopener noreferrer" class="card-link">View Repo ↗</a></td>
+              </tr>
+              <tr class="archive-row" data-category="applied">
+                <td>
+                  <span class="archive-repo-title">MedMentor Deep Learning</span>
+                  <span class="archive-repo-sub">medmentor-deep-learning</span>
+                </td>
+                <td><span class="badge badge-blue">AI Healthcare</span></td>
+                <td>PyTorch, ResNet18, Flask, Transfer Learning</td>
+                <td>9-class skin lesion classification prototype (Academic)</td>
+                <td><a href="https://github.com/Bassma202/medmentor-deep-learning" target="_blank" rel="noopener noreferrer" class="card-link">View Repo ↗</a></td>
+              </tr>
+
+              <!-- Academic -->
+              <tr class="archive-row" data-category="academic">
+                <td>
+                  <span class="archive-repo-title">Decentralized Academic Assistant</span>
+                  <span class="archive-repo-sub">decentralized-academic-assistant</span>
+                </td>
+                <td><span class="badge">Distributed Systems</span></td>
+                <td>Solidity 0.8.28, Hardhat 3, Viem, Express</td>
+                <td>SHA-256 document hashing & non-custodial acknowledgments</td>
+                <td><a href="https://github.com/Bassma202/decentralized-academic-assistant" target="_blank" rel="noopener noreferrer" class="card-link">View Repo ↗</a></td>
+              </tr>
+              <tr class="archive-row" data-category="academic">
+                <td>
+                  <span class="archive-repo-title">University Campus Network</span>
+                  <span class="archive-repo-sub">Projet-R-seau</span>
+                </td>
+                <td><span class="badge">Networking</span></td>
+                <td>Cisco Packet Tracer, OSPF, 802.1Q VLANs, ACLs</td>
+                <td>5-building campus topology, VLSM IP plan & inter-VLAN routing</td>
+                <td><a href="https://github.com/Bassma202/Projet-R-seau" target="_blank" rel="noopener noreferrer" class="card-link">View Repo ↗</a></td>
+              </tr>
+              <tr class="archive-row" data-category="academic">
+                <td>
+                  <span class="archive-repo-title">Distributed Computing & RPC Reports</span>
+                  <span class="archive-repo-sub">rapport-de-projets-</span>
+                </td>
+                <td><span class="badge">Coursework</span></td>
+                <td>Java RPC, Docker Containers, Fake News ML</td>
+                <td>Academic laboratory reports across distributed architectures</td>
+                <td><a href="https://github.com/Bassma202/rapport-de-projets-" target="_blank" rel="noopener noreferrer" class="card-link">View Repo ↗</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: INTERACTIVE CYBERSECURITY KNOWLEDGE ATLAS -->
+    <section class="section" id="atlas">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker" data-i18n="atlas.kicker">System Architecture & Competencies</span>
+          <h2 class="section-title" data-i18n="atlas.title">Cybersecurity Knowledge Atlas</h2>
+          <p class="section-desc" data-i18n="atlas.desc">
+            Explore the interconnected taxonomy of security domains, operational frameworks, programming languages, and verified project citations.
+          </p>
+        </div>
+
+        <div class="atlas-wrapper">
+          <div class="atlas-domains-grid">
+            
+            <div class="atlas-node-card active" data-domain="grc">
+              <div class="atlas-node-header">
+                <span class="atlas-node-icon">⚖</span>
+                <span class="badge badge-brass">ISO 27001 / FAIR</span>
+              </div>
+              <h3 class="atlas-node-title">Governance & Risk</h3>
+              <p class="atlas-node-desc">Compliance automation, quantitative financial loss calculation, and regulatory frameworks.</p>
+              <div class="atlas-skills-list">
+                <span class="tech-tag">ISO 27001:2022</span>
+                <span class="tech-tag">EBIOS RM</span>
+                <span class="tech-tag">FAIR Model</span>
+                <span class="tech-tag">Law 09-08</span>
+              </div>
+            </div>
+
+            <div class="atlas-node-card" data-domain="iam">
+              <div class="atlas-node-header">
+                <span class="atlas-node-icon">🗝</span>
+                <span class="badge badge-brass">NIST 800-207</span>
+              </div>
+              <h3 class="atlas-node-title">Identity & Zero Trust</h3>
+              <p class="atlas-node-desc">Cryptographic token validation, least-privilege API gateways, and role governance.</p>
+              <div class="atlas-skills-list">
+                <span class="tech-tag">Keycloak 26</span>
+                <span class="tech-tag">OIDC / JWT</span>
+                <span class="tech-tag">SoD Matrix</span>
+                <span class="tech-tag">Role Mining</span>
+              </div>
+            </div>
+
+            <div class="atlas-node-card" data-domain="devsecops">
+              <div class="atlas-node-header">
+                <span class="atlas-node-icon">⚡</span>
+                <span class="badge badge-brass">Supply Chain</span>
+              </div>
+              <h3 class="atlas-node-title">Cloud & DevSecOps</h3>
+              <p class="atlas-node-desc">Automated CI/CD security gates, policy-as-code, and cryptographic artifact signing.</p>
+              <div class="atlas-skills-list">
+                <span class="tech-tag">GitLab CI</span>
+                <span class="tech-tag">OPA Rego</span>
+                <span class="tech-tag">CycloneDX</span>
+                <span class="tech-tag">Trivy</span>
+              </div>
+            </div>
+
+            <div class="atlas-node-card" data-domain="detection">
+              <div class="atlas-node-header">
+                <span class="atlas-node-icon">🛡</span>
+                <span class="badge badge-brass">MITRE ATT&CK</span>
+              </div>
+              <h3 class="atlas-node-title">SOC & DFIR</h3>
+              <p class="atlas-node-desc">Threat hunting, Sigma detection rules, Atomic Red Team, and digital forensic triage.</p>
+              <div class="atlas-skills-list">
+                <span class="tech-tag">Sysmon</span>
+                <span class="tech-tag">pySigma</span>
+                <span class="tech-tag">Atomic Red Team</span>
+                <span class="tech-tag">EVTX</span>
+              </div>
+            </div>
+
+            <div class="atlas-node-card" data-domain="scada">
+              <div class="atlas-node-header">
+                <span class="atlas-node-icon">⚙</span>
+                <span class="badge badge-brass">IEC 62443</span>
+              </div>
+              <h3 class="atlas-node-title">Industrial Security (OT)</h3>
+              <p class="atlas-node-desc">SCADA defense, Modbus TCP deep packet inspection, and PLC register protection.</p>
+              <div class="atlas-skills-list">
+                <span class="tech-tag">Modbus TCP</span>
+                <span class="tech-tag">Scapy</span>
+                <span class="tech-tag">Suricata 7</span>
+                <span class="tech-tag">PLC Telemetry</span>
+              </div>
+            </div>
+
+            <div class="atlas-node-card" data-domain="aisec">
+              <div class="atlas-node-header">
+                <span class="atlas-node-icon">◈</span>
+                <span class="badge badge-brass">OWASP LLM 2025</span>
+              </div>
+              <h3 class="atlas-node-title">AI & Agent Security</h3>
+              <p class="atlas-node-desc">LLM prompt injection firewalls, PII redaction, RAG ACLs, and MCP tool validation.</p>
+              <div class="atlas-skills-list">
+                <span class="tech-tag">Prompt Defense</span>
+                <span class="tech-tag">MCP Security</span>
+                <span class="tech-tag">RAG ACLs</span>
+                <span class="tech-tag">Ollama</span>
+              </div>
+            </div>
+
           </div>
-          <div class="cv-buttons">
-            <a href="assets/docs/CV_Bassma_Alaoui_Sossey_AllRounder_EN.pdf" download class="btn btn-primary">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-              <span>Download English CV</span>
-            </a>
-            <a href="assets/docs/CV_Bassma_Alaoui_Sossey_AllRounder_FR.pdf" download class="btn btn-outline">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-              <span>Télécharger le CV Français</span>
-            </a>
+
+          <!-- Inspector Panel -->
+          <div class="atlas-inspector-panel" id="atlasInspectorContent">
+            <div style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--accent-brass); margin-bottom: 0.4rem;">
+              Governance, Risk & Compliance (GRC)
+            </div>
+            <div style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 1rem;">
+              Engineering structured security policies, regulatory mappings, and quantitative loss simulations.
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; font-family: var(--font-mono); font-size: 0.78rem;">
+              <div style="background: var(--bg-surface); padding: 0.85rem; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+                <div style="color: var(--text-muted); font-size: 0.68rem; text-transform: uppercase; margin-bottom: 0.25rem;">Standards & Frameworks</div>
+                <div style="color: var(--text-primary);">ISO/IEC 27001:2022 (93 Annexe A controls), EBIOS RM, FAIR Quantitative Risk, Moroccan Law 09-08/CNDP, GDPR</div>
+              </div>
+              <div style="background: var(--bg-surface); padding: 0.85rem; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+                <div style="color: var(--text-muted); font-size: 0.68rem; text-transform: uppercase; margin-bottom: 0.25rem;">Tooling & Languages</div>
+                <div style="color: var(--text-primary);">Python FastAPI, SQLite, Monte Carlo Poisson-PERT engine, Markdown / JSON reporting</div>
+              </div>
+              <div style="background: var(--bg-surface); padding: 0.85rem; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+                <div style="color: var(--text-muted); font-size: 0.68rem; text-transform: uppercase; margin-bottom: 0.25rem;">Verified Implementations</div>
+                <div style="color: var(--accent-brass); font-weight: 600;">CONSERVA (grc-compliance-automation-tool) & DataPathology Internship</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2026 Bassma Alaoui Sossey. Built with semantic HTML5, modern CSS3 & JavaScript.</p>
-      <div class="footer-links">
-        <a href="https://github.com/Bassma202" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://linkedin.com/in/bassma-alaoui-sossey-009565293" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:bassmaalaoui04@gmail.com">Email</a>
+    <!-- SECTION 5: CYBERSECURITY INTERACTIVE LABORATORY -->
+    <section class="section section-alt" id="laboratory">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker" data-i18n="lab.kicker">Interactive Demonstrations</span>
+          <h2 class="section-title" data-i18n="lab.title">Cybersecurity Interactive Laboratory</h2>
+          <p class="section-desc" data-i18n="lab.desc">
+            Inspect live demonstrations of architectural security concepts using simulated telemetry, token verification, and quantitative modeling.
+          </p>
+        </div>
+
+        <div class="lab-grid">
+
+          <!-- Demo 1: Zero-Trust JWT PEP Inspector -->
+          <div class="lab-demo-card">
+            <div>
+              <div class="lab-header">
+                <span class="badge badge-brass">PEP Token Gateway</span>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">RS256 / JWKS</span>
+              </div>
+              <h3 class="lab-title">Zero-Trust JWT Policy Inspector</h3>
+              <p class="lab-desc">
+                Simulates real-time Policy Enforcement Point (PEP) token validation against Keycloak client scopes and tenant boundaries.
+              </p>
+              <div class="lab-simulator-box">
+                <div class="sim-input-group">
+                  <label for="jwtPersonaSelect" class="sim-label">Select Identity Persona</label>
+                  <select id="jwtPersonaSelect" class="sim-select">
+                    <option value="auditor">Alice (Compliance Auditor) — Tenant 01</option>
+                    <option value="admin">Bob (Security Engineer) — Tenant 01</option>
+                    <option value="unauthorized">Mallory (Untrusted Guest) — External</option>
+                  </select>
+                </div>
+                <div id="jwtOutputConsole" class="sim-output-console">
+                  <span style="color: var(--text-muted);">Click "Execute PEP Check" to evaluate token claims...</span>
+                </div>
+              </div>
+            </div>
+            <button id="jwtRunBtn" class="btn btn-outline btn-sm" style="width: 100%;">Execute PEP Check</button>
+          </div>
+
+          <!-- Demo 2: Modbus DPI Packet Firewall -->
+          <div class="lab-demo-card">
+            <div>
+              <div class="lab-header">
+                <span class="badge badge-brass">Industrial OT DPI</span>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">Port 502 / MBAP</span>
+              </div>
+              <h3 class="lab-title">Modbus/TCP DPI Packet Firewall</h3>
+              <p class="lab-desc">
+                Inspects industrial frame function codes and memory addresses to block unauthorized actuator commands in real time.
+              </p>
+              <div class="lab-simulator-box">
+                <div class="sim-input-group">
+                  <label for="modbusScenarioSelect" class="sim-label">Select Industrial Packet Scenario</label>
+                  <select id="modbusScenarioSelect" class="sim-select">
+                    <option value="fc03">FC03: Read Telemetry Registers (Normal)</option>
+                    <option value="fc05">FC05: Unauthorized Coil Write (Malicious)</option>
+                    <option value="fc90">FC90: Proprietary Function Injection (Adversary)</option>
+                  </select>
+                </div>
+                <div id="modbusOutputConsole" class="sim-output-console">
+                  <span style="color: var(--text-muted);">Click "Inspect Frame" to test DPI firewall rules...</span>
+                </div>
+              </div>
+            </div>
+            <button id="modbusRunBtn" class="btn btn-outline btn-sm" style="width: 100%;">Inspect Frame</button>
+          </div>
+
+          <!-- Demo 3: FAIR Quantitative Risk Calculator -->
+          <div class="lab-demo-card">
+            <div>
+              <div class="lab-header">
+                <span class="badge badge-brass">FAIR Model</span>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">Monte Carlo (EUR/MAD)</span>
+              </div>
+              <h3 class="lab-title">FAIR Risk & Loss Calculator</h3>
+              <p class="lab-desc">
+                Quantifies expected Annualized Loss Expectancy (ALE) and Value at Risk (VaR) using Poisson-PERT parameter distributions.
+              </p>
+              <div class="lab-simulator-box">
+                <div class="sim-input-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                  <div>
+                    <label for="fairTefInput" class="sim-label">Threat Freq (TEF/yr)</label>
+                    <input type="number" id="fairTefInput" class="sim-select" value="2.5" step="0.5" min="0.1">
+                  </div>
+                  <div>
+                    <label for="fairVulnInput" class="sim-label">Vuln Prob (%)</label>
+                    <input type="number" id="fairVulnInput" class="sim-select" value="35" min="1" max="100">
+                  </div>
+                </div>
+                <div class="sim-input-group">
+                  <label for="fairLossInput" class="sim-label">Loss Magnitude (€ Primary + Sec)</label>
+                  <input type="number" id="fairLossInput" class="sim-select" value="50000" step="5000">
+                </div>
+                <div id="fairOutputConsole" class="sim-output-console">
+                  <span style="color: var(--text-muted);">Click "Compute FAIR Loss" to simulate exposure...</span>
+                </div>
+              </div>
+            </div>
+            <button id="fairCalcBtn" class="btn btn-outline btn-sm" style="width: 100%;">Compute FAIR Loss</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: RESEARCH & INTELLECTUAL ARCHIVE -->
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker" data-i18n="research.kicker">Interdisciplinary Studies</span>
+          <h2 class="section-title" data-i18n="research.title">Research & Intellectual Archive</h2>
+          <p class="section-desc" data-i18n="research.desc">
+            Exploring the intersections of cybersecurity, digital pathology data protection, astronomical observatories, aerospace resilience, and digital manuscript provenance.
+          </p>
+        </div>
+
+        <div class="research-grid">
+
+          <!-- 1. Digital Pathology -->
+          <article class="research-card">
+            <div>
+              <span class="research-theme-kicker">Healthcare & Biomedical Cyber</span>
+              <h3 class="research-title">Data Protection & Access Governance in Digital Whole-Slide Pathology</h3>
+              <p class="research-abstract">
+                Investigation of sensitive clinical imaging workflows, DICOM/WSI ingestion pipelines, and regulatory compliance under Moroccan Law 09-08 and ISO 27001. Addresses RBAC, remote diagnostic logging, and tamper-resistant audit trails in hospital laboratory infrastructures.
+              </p>
+            </div>
+            <div class="research-meta">
+              <span>Domain: Health Data Privacy</span> • <span>DataPathology Case Study</span>
+            </div>
+          </article>
+
+          <!-- 2. Astronomical Observatories -->
+          <article class="research-card">
+            <div>
+              <span class="research-theme-kicker">Scientific Infrastructure</span>
+              <h3 class="research-title">Defensive Engineering for Astronomical Observatories & Sensor Arrays</h3>
+              <p class="research-abstract">
+                Securing telescope motor telemetry, high-throughput cryogenic CCD pipelines, and remote astronomical instrumentation against unauthorized actuation and data manipulation. Investigating zero-trust sensor provenance and data integrity.
+              </p>
+            </div>
+            <div class="research-meta">
+              <span>Domain: OT/SCADA & Research Systems</span>
+            </div>
+          </article>
+
+          <!-- 3. Manuscript Provenance -->
+          <article class="research-card">
+            <div>
+              <span class="research-theme-kicker">Cultural Heritage Preservation</span>
+              <h3 class="research-title">Cryptographic Provenance & Digital Authenticity of Rare Manuscripts</h3>
+              <p class="research-abstract">
+                Applying SHA-256 cryptographic hashing, non-custodial decentralized verification, and immutable access controls to protect historical library collections, ancient codices, and archival documents against digital forgery and degradation.
+              </p>
+            </div>
+            <div class="research-meta">
+              <span>Domain: Cryptography & Integrity</span>
+            </div>
+          </article>
+
+          <!-- 4. Aerospace Security -->
+          <article class="research-card">
+            <div>
+              <span class="research-theme-kicker">Aerospace & Orbital Systems</span>
+              <h3 class="research-title">Cyber Resilience in Low-Earth Orbit Ground-to-Satellite Telemetry</h3>
+              <p class="research-abstract">
+                Evaluating software supply-chain integrity, CCSDS communication protocol protections, and authenticated command uplinks to prevent adversary spoofing and denial-of-service in critical aerospace telemetry networks.
+              </p>
+            </div>
+            <div class="research-meta">
+              <span>Domain: Aerospace Cybersecurity</span>
+            </div>
+          </article>
+
+          <!-- 5. AI Agent Security -->
+          <article class="research-card">
+            <div>
+              <span class="research-theme-kicker">Artificial Intelligence</span>
+              <h3 class="research-title">Defense Architectures for Autonomous AI Agents & Model Context Protocol</h3>
+              <p class="research-abstract">
+                Analyzing indirect prompt injection vectors, JSON-RPC 2.0 tool execution boundaries, and algorithmic PII scrubbing in agentic AI systems. Proposing deterministic policy enforcement points preceding autonomous API tool invocations.
+              </p>
+            </div>
+            <div class="research-meta">
+              <span>Domain: AI & Agentic Security</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: EXPERIENCE & EDUCATION -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker" data-i18n="exp.kicker">Career Trajectory</span>
+          <h2 class="section-title" data-i18n="exp.title">Experience & Academic Milestones</h2>
+          <p class="section-desc" data-i18n="exp.desc">
+            Rigorous five-year engineering education (Bac+5 Grade Master) combined with healthcare cybersecurity risk assessment experience.
+          </p>
+        </div>
+
+        <div class="timeline-grid">
+
+          <!-- Left Column: Professional Experience -->
+          <div>
+            <h3 class="timeline-column-header">
+              <span>🏛</span> Professional Experience
+            </h3>
+
+            <div class="timeline-card">
+              <div class="timeline-date">July 2026 – September 2026</div>
+              <div class="timeline-org">DataPathology</div>
+              <div class="timeline-role">Cybersecurity & Data Protection Intern — Casablanca, Morocco</div>
+              <p style="font-size: 0.86rem; color: var(--text-muted); margin-bottom: 0.85rem;">
+                Subject: <em>Security and Data Protection in a Digital Pathology Environment (Pathologie Numérique).</em>
+              </p>
+              <ul class="timeline-bullets">
+                <li>Mapped 100% of sensitive patient health and laboratory data flows across 14 ingestion, processing, transmission, and archival checkpoints.</li>
+                <li>Evaluated 42 regulatory compliance gaps under Moroccan Law 09-08 (CNDP) and ISO/IEC 27001 healthcare information security guidelines.</li>
+                <li>Modeled Role-Based Access Control (RBAC) matrices reducing unaudited remote consultation permissions by 35%.</li>
+                <li>Formalized 8 security procedures governing remote whole-slide image access, cryptographic transmission, and audit logging for 3 partner hospitals.</li>
+              </ul>
+            </div>
+
+            <!-- Focus areas -->
+            <div style="background: var(--bg-primary); border: 1px solid var(--border-primary); border-radius: var(--radius-md); padding: 1.5rem;">
+              <h4 style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--accent-brass); margin-bottom: 0.6rem;">Target Career Trajectories</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                Actively seeking PFE roles in <strong>Security Engineering</strong>, <strong>Identity & Access Management (Zero Trust)</strong>, <strong>Cloud Security & DevSecOps</strong>, <strong>GRC & Quantitative Risk Consulting</strong>, and <strong>SOC Detection Engineering</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Academic Formation -->
+          <div>
+            <h3 class="timeline-column-header">
+              <span>🎓</span> Academic Formation
+            </h3>
+
+            <div class="timeline-card">
+              <div class="timeline-date">2022 – 2027 (Expected)</div>
+              <div class="timeline-org">Université Euromed de Fès (UEMF)</div>
+              <div class="timeline-role">Diplôme d'Ingénieur d'État en Cybersécurité (Bac+5 / Grade Master)</div>
+              <p style="font-size: 0.86rem; color: var(--text-muted); margin-bottom: 0.85rem;">
+                École d'Ingénierie Digitale et d'Intelligence Artificielle (EIDIA) — Fès, Morocco
+              </p>
+              <ul class="timeline-bullets">
+                <li><strong>2024–2027:</strong> Engineering Cycle specializing in Computer Science & Cybersecurity (Currently in final graduation year).</li>
+                <li><strong>2022–2024:</strong> Integrated Engineering Preparatory Classes (CPGE — Intensive Mathematics, Physics, Digital Logic, and Computer Science).</li>
+                <li><strong>Core Specialization Modules:</strong> Information Systems Security, Active Directory & Windows Security, Cryptography, DevSecOps, SCADA & ICS Security, DFIR, Cloud Security, Machine Learning Security.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-date">Certified 2022</div>
+              <div class="timeline-org">DALF C1 — Diplôme Approfondi de Langue Française</div>
+              <div class="timeline-role">Ministère de l'Éducation Nationale et de la Jeunesse (France)</div>
+              <p style="font-size: 0.86rem; color: var(--text-secondary);">
+                Certified full professional proficiency (Level C1) in technical synthesis, academic presentation, and professional documentation.
+              </p>
+            </div>
+
+            <!-- Spoken Languages -->
+            <div style="background: var(--bg-primary); border: 1px solid var(--border-primary); border-radius: var(--radius-md); padding: 1.5rem;">
+              <h4 style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--accent-brass); margin-bottom: 0.6rem;">Languages</h4>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; font-size: 0.86rem; color: var(--text-secondary);">
+                <div><strong>Arabic:</strong> Native</div>
+                <div><strong>French:</strong> Fluent (DALF C1)</div>
+                <div><strong>English:</strong> Advanced / C1 (Proficient)</div>
+                <div><strong>German:</strong> Beginner</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: EXECUTIVE RÉSUMÉ DOWNLOADS -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="resume-box">
+          <div>
+            <span class="section-kicker" data-i18n="resume.kicker">Curriculum Vitae</span>
+            <h2 class="section-title" data-i18n="resume.title">Executive Engineering Résumé</h2>
+            <p class="section-desc" style="margin-bottom: 1.5rem;" data-i18n="resume.desc">
+              Download the verified 1-page vector PDF executive CVs in English and French, featuring quantified impact metrics and repository citations.
+            </p>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+              Prepared following top French engineering and international tech standards: structured typography, quantified project outcomes, verified coursework, and zero AI clichés.
+            </p>
+          </div>
+
+          <div class="resume-download-card">
+            <h3 class="resume-download-header">Download Executive CV</h3>
+            <p class="resume-download-desc">Select your preferred language version (1-Page Vector PDF):</p>
+            <div class="resume-btn-stack">
+              <a href="assets/docs/CV_Bassma_Alaoui_Sossey_AllRounder_EN.pdf" download="CV_Bassma_Alaoui_Sossey_EN.pdf" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <span>Download English CV (PDF)</span>
+              </a>
+              <a href="assets/docs/CV_Bassma_Alaoui_Sossey_AllRounder_FR.pdf" download="CV_Bassma_Alaoui_Sossey_FR.pdf" class="btn btn-outline">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <span>Télécharger le CV Français (PDF)</span>
+              </a>
+              <a href="assets/docs/Guide_Maitrise_Projets_Bassma_Alaoui_Sossey.pdf" download class="btn btn-ghost btn-sm">
+                <span>Technical Project Mastery Dossier (PDF) →</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: CONTACT & INQUIRIES -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker" data-i18n="contact.kicker">Inquiries & Mobility</span>
+          <h2 class="section-title" data-i18n="contact.title">Let's Discuss PFE Opportunities</h2>
+          <p class="section-desc" data-i18n="contact.desc">
+            Available for a 4 to 6-month End-of-Studies Engineering Internship (PFE) starting February 2027. Open to relocation in Paris / Île-de-France, throughout France, Morocco, and Europe.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <!-- Email -->
+            <div class="contact-card-item">
+              <div>
+                <div class="contact-label-kicker">Professional Email</div>
+                <div class="contact-val-text" id="emailText">bassmaalaoui04@gmail.com</div>
+              </div>
+              <button id="copyEmailBtn" class="copy-button" title="Copy email address">Copy</button>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-card-item">
+              <div>
+                <div class="contact-label-kicker">LinkedIn Profile</div>
+                <div class="contact-val-text">linkedin.com/in/bassma-alaoui-sossey-009565293</div>
+              </div>
+              <a href="https://linkedin.com/in/bassma-alaoui-sossey-009565293" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Connect ↗</a>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-card-item">
+              <div>
+                <div class="contact-label-kicker">GitHub Portfolio</div>
+                <div class="contact-val-text">github.com/Bassma202</div>
+              </div>
+              <a href="https://github.com/Bassma202" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Repositories ↗</a>
+            </div>
+          </div>
+
+          <!-- Mobility & Guidelines Card -->
+          <div style="background: var(--bg-primary); border: 1px solid var(--border-primary); border-radius: var(--radius-md); padding: 2rem;">
+            <h3 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--accent-brass); margin-bottom: 1rem;">Internship & Mobility Details</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+              <div>
+                <strong style="color: var(--text-primary);">Duration:</strong> 4 to 6 months (Projet de Fin d'Études — PFE).
+              </div>
+              <div>
+                <strong style="color: var(--text-primary);">Preferred Start:</strong> February 2027 (flexible around 9–15 February).
+              </div>
+              <div>
+                <strong style="color: var(--text-primary);">Geographic Scope:</strong> France (Paris & Île-de-France preferred, open to nationwide), Morocco, and European technology centers.
+              </div>
+              <div>
+                <strong style="color: var(--text-primary);">Direct Outreach:</strong> For interview scheduling or technical discussions, email is checked daily and prioritized.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.85rem;">
+            <div class="brand-monogram" style="width: 32px; height: 32px; font-size: 0.95rem;">BA</div>
+            <span style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 600; color: var(--text-primary);">Bassma Alaoui Sossey</span>
+          </div>
+          <p style="font-size: 0.84rem; color: var(--text-secondary); max-width: 380px; line-height: 1.6;">
+            Final-Year Cybersecurity Engineering Student at Université Euromed de Fès (UEMF). Building resilient, verifiable, and mathematically grounded security architectures.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Flagship Architectures</h4>
+          <div class="footer-links">
+            <a href="https://github.com/Bassma202/scada-modbus-defense-lab" target="_blank" rel="noopener noreferrer">AETHER — SCADA Modbus Lab</a>
+            <a href="https://github.com/Bassma202/windows-dfir-atomic-lab" target="_blank" rel="noopener noreferrer">VESPER — Windows DFIR Lab</a>
+            <a href="https://github.com/Bassma202/grc-compliance-automation-tool" target="_blank" rel="noopener noreferrer">CONSERVA — GRC & FAIR Tool</a>
+            <a href="https://github.com/Bassma202/zerotrust-iam-oidc-gateway" target="_blank" rel="noopener noreferrer">LIMEN — Zero-Trust IAM Gateway</a>
+            <a href="https://github.com/Bassma202/llm-guardrail-security-proxy" target="_blank" rel="noopener noreferrer">ALETHEIA — LLM Guardrail Proxy</a>
+            <a href="https://github.com/Bassma202/ai-devsecops-telegram-agent" target="_blank" rel="noopener noreferrer">FORGE — DevSecOps Pipeline</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation & Documents</h4>
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#atlas">Knowledge Atlas</a>
+            <a href="#laboratory">Security Lab Demos</a>
+            <a href="#research">Research Archive</a>
+            <a href="#experience">Experience & Education</a>
+            <a href="assets/docs/CV_Bassma_Alaoui_Sossey_AllRounder_EN.pdf" download>Download English CV</a>
+            <a href="assets/docs/CV_Bassma_Alaoui_Sossey_AllRounder_FR.pdf" download>Télécharger CV Français</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026–2027 Bassma Alaoui Sossey. All rights reserved.</div>
+        <div>Contemporary Heritage × Scientific Modernism</div>
       </div>
     </div>
   </footer>
 
+  <!-- COMMAND PALETTE MODAL (CMD+K) -->
+  <div class="cmd-modal" id="cmdModal" role="dialog" aria-modal="true" aria-label="Command Palette">
+    <div class="cmd-box">
+      <div class="cmd-input-row">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="cmdInput" class="cmd-input" placeholder="Type a project, technology, or section to navigate...">
+      </div>
+      <div class="cmd-results-list" id="cmdResultsList"></div>
+    </div>
+  </div>
+
+  <!-- CASE STUDY MODAL -->
+  <div class="case-modal" id="caseModal" role="dialog" aria-modal="true" aria-label="Project Case Study">
+    <div class="case-modal-dialog">
+      <div class="case-modal-header">
+        <span style="font-family: var(--font-mono); font-size: 0.76rem; color: var(--accent-brass);">TECHNICAL SPECIFICATION DOSSIER</span>
+        <button id="caseCloseBtn" style="color: var(--text-muted); font-size: 1.25rem; padding: 0.25rem 0.5rem;" title="Close modal">✕</button>
+      </div>
+      <div class="case-modal-body" id="caseModalContent"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript Engine -->
   <script src="script.js"></script>
 </body>
 </html>
